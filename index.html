@@ -30,12 +30,12 @@
           <div class="collapse navbar-collapse" id="nav-collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#tabPlaythrough" data-toggle="tab" data-target="#tabPlaythrough,#btnHideCompleted">Playthrough</a></li>
+              <li><a href="#tabFAQ" data-toggle="tab"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
+              <li><a href="#tabOptions" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
               <!-- <li><a href="#tabChecklists" data-toggle="tab" data-target="#tabChecklists,#btnHideCompleted">Achievements</a></li>
               <li><a href="#tabWeaponsShields" data-toggle="tab" data-target="#tabWeaponsShields,#btnHideCompleted">Weapons/Shields</a></li>
               <li><a href="#tabArmors" data-toggle="tab" data-target="#tabArmors,#btnHideCompleted">Armor</a></li>
               <li><a href="#tabMisc" data-toggle="tab" data-target="#tabMisc,#btnHideCompleted">Misc</a></li>
-              <li><a href="#tabFAQ" data-toggle="tab"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
-              <li><a href="#tabOptions" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
               -->
             </ul>
             <!-- /.nav.navbar-nav -->
@@ -48,7 +48,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1>Group&nbsp;Ironman&nbsp;3 Guide</h1>
+            <h1>Group&nbsp;Ironman&nbsp;Guide</h1>
             <p class="lead">Have something to add? Message me on Discord! <!-- <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">GitHub Page</a>--></p>
           </div>
         </div>
@@ -72,7 +72,7 @@
           </div>
           <!-- PLAYTHROUGH START -->
           <div class="tab-pane active" id="tabPlaythrough">
-            <h2>Playthrough Checklist <span id="playthrough_overall_total"></span></h2>
+            <h2>Account Checklist <span id="playthrough_overall_total"></span></h2>
             <ul class="table_of_contents">
                 <li><a href="#Important_Notes">Important Notes</a> <span id="playthrough_nav_totals_4"></span></li>
                 
@@ -100,7 +100,107 @@
                   <li data-id="playthrough_2_4">Pickup every item spawn in the castle, including the cellar, don't forget your cabbage!</li>
                 </ul>
 
-
+                <div class="tab-pane" id="tabFAQ">      
+                  <h2>FAQ</h2>
+          
+                  <p>The foundation of this guide was based on <a href="https://github.com/smcnabb">Stephen McNabb</a>'s <a href="https://github.com/smcnabb/dark-souls-2-cheat-sheet">Dark Soul 2 Cheat Sheet</a> source code and <a href="http://www.gamefaqs.com/boards/168566-dark-souls-iii/73599466">DeathGodGarra's NPC Side Quests Guide V2</a> walkthrough guide</p>
+                  <p>This guide has evolved thanks to the many <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet/graphs/contributors">GitHub contributors</a> with many great suggestions, fixes and improvements!</p>
+          
+                  <h3>I have feedback, how can I contribute?</h3>
+                  <p>You can visit the <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">GitHub repository</a> and <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet/issues">report Issues</a> or create a fork and submit a Pull Request.</p>
+          
+                  <h3>Is this a guide?</h3>
+                  <p>Nope, not really. This is a set of checklists and information that you can use while playing Dark Souls to make sure you don't miss an item, action, conversation, or boss. If you need playthroughs then you can click on the zone titles to read the wiki walkthrough.</p>
+          
+                  <h3>Do I need to follow the playthrough in this exact order?</h3>
+                  <p>Dark Souls 3 is not a linear game and has multiple ways of progressing. This guide highlights zones as they become available, so feel free to follow however you please. You can always check things off in a different order.</p>
+          
+                  <h3>Can I use this for multiple characters?</h3>
+                  <p>Yup, use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.</p>
+          
+                  <h3>How does the checklist status get saved?</h3>
+                  <p>The checklist is saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.</p>
+                </div>
+          
+                <div class="tab-pane" id="tabOptions">
+                  <h2>Options</h2>
+          
+                  <!-- Theme Selection -->
+                  <div class="row">
+                    <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Theme selection:</h4></div>
+                    <div class="col col-xs-12 col-sm-8 col-md-6"><select class="form-control" id="themes"><!-- Gets filled by jQuery. --></select></div>
+                  </div>
+                  <!-- Profile Selection -->
+                  <div class="row">
+                    <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Profile management:</h4></div>
+                    <div class="col col-xs-12 col-sm-8 col-md-6">
+                      <form class="form-inline input-group pull-right">
+                        <select class="form-control" id="profiles"></select>
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button" id="profileAdd">Add</button>
+                          <button class="btn btn-default" type="button" id="profileEdit">Edit</button>
+                          <button class="btn btn-default" type="button" id="profileNG+">NG+</button>
+                        </span>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- Import/Export -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-6"><h4>Data import/export:</h4></div>
+                    <div class="col-xs-12 col-sm-8 col-md-6">
+                      <form class="form-inline">
+                        <span class="btn-group pull-left">
+                          <button class="btn btn-default" type="button" id="profileImport">Import file</button>
+                          <button class="btn btn-default" type="button" id="profileExport">Export file</button>
+                        </span>
+                        <span class="btn-group pull-right">
+                          <button class="btn btn-default" type="button" id="profileImportText">Import textbox</button>
+                          <button class="btn btn-default" type="button" id="profileExportText">Export clipboard</button>
+                        </span>
+                      </form>
+                    </div>
+                    <div class="col col-xs-12">
+                      <textarea id="profileText" class="form-control"></textarea>
+                    </div>
+                  </div>
+                </div>
+          
+                <div id="profileModal" class="modal fade" tabindex="-1" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 id="profileModalTitle" class="modal-title">Profile</h3>
+                      </div>
+                      <div class="modal-body">
+                        <form class="form-horizontal">
+                          <div class="control-group">
+                            <label class="control-label" for="profileModalName">Name</label>
+                            <div class="controls">
+                              <input type="text" class="form-control" id="profileModalName" placeholder="Enter profile name">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#" id="profileModalClose" class="btn btn-default" data-dismiss="modal">Close</a>
+                        <a href="#" id="profileModalAdd" class="btn btn-primary" data-dismiss="modal">Add</a>
+                        <a href="#" id="profileModalUpdate" class="btn btn-primary">Update</a>
+                        <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+              </div>
+              <!-- tab-content -->
+            </div>
+            <!-- container -->
+          </div>
+        </div>
+      </div>
 
     <div class="hiddenfile">
         <input name="upload" type="file" id="fileInput" />
