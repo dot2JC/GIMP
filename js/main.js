@@ -247,6 +247,40 @@ var profilesKey = 'darksouls3_profiles';
             else {var c = Math.round((a+b)/2); $('html, body').scrollTop(oldPos+Math.round(labels.eq(c).offset().top)-Math.round(oldOff[c]));}
         });
 
+        $('[data-ng-toggle]').change(function() {
+            var journey = $(this).data('ng-toggle');
+
+            profiles[profilesKey][profiles.current].journey = +journey
+            $.jStorage.set(profilesKey, profiles);
+
+            toggleFilteredClasses('h_ng\\+');
+            toggleFilteredClasses('s_ng\\+');
+            toggleFilteredClasses('s_ng\\+\\+');
+
+            calculateTotals();
+        });
+
+        $('[data-item-toggle]').change(function() {
+            var type = $(this).data('item-toggle');
+            var to_hide = $(this).is(':checked');
+            var item_toggles = $(this).closest('.btn-group.btn-group-vertical').find('[data-item-toggle]');
+
+            profiles[profilesKey][profiles.current].hidden_categories[type] = to_hide;
+            $.jStorage.set(profilesKey, profiles);
+
+            toggleFilteredClasses(type);
+            toggleFilteredClasses('f_none');
+
+            // Mark parent category as hidden if and only if all items in it are hidden
+            if (to_hide === (item_toggles.length === item_toggles.filter(':checked').length)) {
+                $(this).closest('.btn-group.btn-group-vertical').find('[data-category-toggle]').not(function(){return this.checked === to_hide}).click();
+            }
+            // Apply partial highlight to the parent category if at least one item in it is hidden
+            $(this).closest('.btn-group.btn-group-vertical').find('.btn-group-vertical').toggleClass('open', item_toggles.filter(':checked').length > 0);
+
+            calculateTotals();
+        });
+
         $('[data-category-toggle]').change(function() {
             var to_hide = $(this).is(':checked');
             var item_toggles = $(this).closest('.btn-group.btn-group-vertical').find('[data-item-toggle]');
@@ -260,6 +294,42 @@ var profilesKey = 'darksouls3_profiles';
         calculateTotals();
 
     });
+
+    function initializeProfile(profile_name) {
+        if (!(profile_name in profiles[profilesKey])) profiles[profilesKey][profile_name] = {};
+        if (!('checklistData' in profiles[profilesKey][profile_name]))
+            profiles[profilesKey][profile_name].checklistData = {};
+        if (!('collapsed' in profiles[profilesKey][profile_name]))
+            profiles[profilesKey][profile_name].collapsed = {};
+        if (!('current_tab' in profiles[profilesKey][profile_name]))
+            profiles[profilesKey][profile_name].current_tab = '#tabPlaythrough';
+        if (!('hide_completed' in profiles[profilesKey][profile_name]))
+            profiles[profilesKey][profile_name].hide_completed = false;
+        if (!('journey' in profiles[profilesKey][profile_name]))
+            profiles[profilesKey][profile_name].journey = 1;
+        if (!('hidden_categories' in profiles[profilesKey][profile_name]))
+            profiles[profilesKey][profile_name].hidden_categories = {
+                f_boss: false,
+                f_miss: false,
+                f_npc: false,
+                f_estus: false,
+                f_bone: false,
+                f_tome: false,
+                f_coal: false,
+                f_ash: false,
+                f_gest: false,
+                f_sorc: false,
+                f_pyro: false,
+                f_mirac: false,
+                f_ring: false,
+                f_weap: false,
+                f_arm: false,
+                f_tit: false,
+                f_gem: false,
+                f_cov: false,
+                f_misc: false
+            };
+    }
 
     /// restore all saved state, except for the current tab
     /// used on page load or when switching profiles
@@ -280,7 +350,17 @@ var profilesKey = 'darksouls3_profiles';
         var button_active = $button.is(':checked');
         if ((hide_completed_state && !button_active) || (!hide_completed_state && button_active)) {
             $button.click();
-        };
+        }
+
+        $('[data-ng-toggle="' + profiles[profilesKey][profile_name].journey + '"]').click().change();
+        $.each(profiles[profilesKey][profile_name].hidden_categories, function(key, value) {
+            var $el = $('[data-item-toggle="' + key + '"]');
+            var active = $el.is(':checked');
+
+            if ((value && !active) || (!value && active)) {
+                $el.click();
+            }
+        });
     }
 
     // Setup ("bootstrap", haha) styling
@@ -311,6 +391,14 @@ var profilesKey = 'darksouls3_profiles';
       populateChecklists();
       $('#profiles').trigger("change");
       location.reload();
+    }
+
+    function populateProfiles() {
+        $('#profiles').empty();
+        $.each(profiles[profilesKey], function(index, value) {
+            $('#profiles').append($("<option></option>").attr('value', index).text(index));
+        });
+        $('#profiles').val(profiles.current);
     }
 
     function populateChecklists() {
@@ -375,6 +463,8 @@ var profilesKey = 'darksouls3_profiles';
                 this.innerHTML = overallChecked + '/' + overallCount;
                 $(this).removeClass('done').addClass('in_progress');
             }
+        // Update textarea for profile export
+        document.getElementById("profileText").value = JSON.stringify(profiles);
         });
     }
 
@@ -406,6 +496,12 @@ var profilesKey = 'darksouls3_profiles';
             count++;
         });
         return (count > 1);
+    }
+
+    function getFirstProfile() {
+        for (var profile in profiles[profilesKey]) {
+            return profile;
+        }
     }
 
     function canFilter(entry) {
