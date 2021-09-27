@@ -12,6 +12,15 @@
   <meta name="mobile-web-app-capable" content="yes">
   <link id="bootstrap" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link href="css/main.css" rel="stylesheet">
+  <!-- <style>
+    body {
+      background-image: url('img/bg.jpg');
+      background-attachment: scroll;  
+      background-size: 100%;
+      background-repeat: repeat-y;
+      background-position: center;
+    }
+    </style> -->
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -29,7 +38,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="nav-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#tabPlaythrough" data-toggle="tab" data-target="#tabPlaythrough,#btnHideCompleted">Playthrough</a></li>
+              <li class="active"><a href="#tabPlaythrough" data-toggle="tab" data-target="#tabPlaythrough,#btnHideCompleted">Guide</a></li>
               <li><a href="#tabFAQ" data-toggle="tab"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
               <li><a href="#tabOptions" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
             </ul>
@@ -40,14 +49,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
+            <img src="https://oldschool.runescape.wiki/images/thumb/1/14/Ironman_Mode_logo.png/248px-Ironman_Mode_logo.png?018e7" alt="ironman mode logo">
             <h1>Group&nbsp;Ironman&nbsp;Guide</h1>
-            <p class="lead">Have something to add? Message me on Discord! <!-- <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">GitHub Page</a>--></p>
+            <p class="lead">Have any sort of suggestions? Message me on <a href="https://discordapp.com/users/114200877627211781">Discord</a>! <!-- <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">GitHub Page</a>--></p>
           </div>
         </div>
     
         <div class="tab-content">
           <!-- Hide Completed Toggle -->
-          <!--<div class="tab-pane active in" id="btnHideCompleted">
+          <div class="tab-pane active in" id="btnHideCompleted">
             <div class="btn-group" role="group" data-toggle="buttons">
               <label class="btn btn-default">
                 <input type="checkbox" id="toggleHideCompleted">
@@ -61,13 +71,15 @@
                 </a>
               </label>
             </div> 
-          </div> -->
+          </div>
           <!-- PLAYTHROUGH START -->
           <div class="tab-pane active" id="tabPlaythrough">
-            <h2>Account Checklist <span id="playthrough_overall_total"></span></h2>
+            <h2>Group Ironman Journey <span id="playthrough_overall_total"></span></h2>
             <ul class="table_of_contents">
               <li><a href="#Important_Notes">Important Notes</a> <span id="playthrough_nav_totals_1"></span></li>
-              <li><a href="#Early_Game">Early Game</a> <span id="plathrough_nav_totals_2"></span></li>
+              <li><a href="#Lumbridge1">Lumbridge 1</a> <span id="playthrough_nav_totals_2"></span></li>
+              <li><a href="#Draynor1">Draynor, Port Sarim, Falador, and Rimmington</a> <span id="playthrough_nav_totals_3"></span></li>
+              <li><a href="#Arganoog1">Yanille, Arganoog, and Port Khazard</a> <span id="playthrough_nav_totals_4"></span></li>
             </ul>
 
             <div class="form-group">
@@ -77,18 +89,69 @@
           <div id="playthrough_list">
             <h3 id="Important_Notes"><a href="#Important_Notes_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/1">Important Notes</a> <span id="playthrough_totals_1"></span></h3>
               <ul id="Important_Notes_col" class="collapse in">
-                <li data-id="playthrough_1_1">Use EVERY book and lamp on Herblore until you reach level 77. After 77 Herblore, put them on Prayer (if HCIM), Agility, or RC (whichever you hate most)</li>
+                <li data-id="playthrough_1_1">Use EVERY book and lamp on Herblore <img src="https://oldschool.runescape.wiki/images/0/03/Herblore_icon.png?ffa9e" alt="herb"> until you reach level 77. After 77 Herblore <img src="https://oldschool.runescape.wiki/images/0/03/Herblore_icon.png?ffa9e" alt="herb">, put them on Prayer <img src="https://oldschool.runescape.wiki/images/f/f2/Prayer_icon.png?ca0dc" alt="pray">(if Hardcore Ironman <img src="https://oldschool.runescape.wiki/images/b/b8/Hardcore_ironman_chat_badge.png?a1753" alt="hcim chathead"> ), Agility <img src="https://oldschool.runescape.wiki/images/8/86/Agility_icon.png?389e0" alt="agility">, or RC <img src="https://oldschool.runescape.wiki/images/6/63/Runecraft_icon.png?c278c" alt="runecraft"> (whichever you hate most)</li>
                 <li data-id="playthrough_1_2">Enable Authenticator on your account</li>
-                <li data-id="playthrough_1_3">Make sure to start with a FEMALE character (we use this later for Recruitment Drive (it saves 3K GP))</li>
+                <li data-id="playthrough_1_3">Make sure to start with a FEMALE character (we use this later for <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/Recruitment_Drive">Recruitment Drive</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> (it saves 3K GP))</li>
                 <li data-id="playthrough_1_4">Before leaving Tutorial Island, make sure you stop at the NODE to get the group together and make a Group Ironman</li>
               </ul>
 
-              <h3 id="Early_Game"><a href="#Early_Game_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/2">Early Game (Quests, Wintertodt, Arganoog Cloak 1)</a> <span id="playthrough_totals_2"></span></h3>
-              <ul id="Early_Game_col" class="collapse in">
+            <h3 id="Lumbridge1"><a href="#Lumbridge1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/2">Lumbridge 1 - Starting up and Gathering</a> <span id="playthrough_totals_2"></span></h3>
+              <ul id="Lumbridge1_col" class="collapse in">
                 <li data-id="playthrough_2_1">Upon arriving in Lumbridge, sell your bronze dagger, sword, axe, wooden shield, and shortbow to the general store</li>
-                <li data-id="playthrough_2_2">Buy a spade and then start *QUEST* X Marks the Spot</li>
+                <li data-id="playthrough_2_2">Buy a spade and then start <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"></li>
                 <li data-id="playthrough_2_3">Drop your runes and ask for more from the magic tutor, pickup your runes after you receive the free ones</li>
                 <li data-id="playthrough_2_4">Pickup every item spawn in the castle, including the cellar, don't forget your cabbage!</li>
+                <li data-id="playthrough_2_5">Fill a jug with water in the kitchen or the cellar</li>
+                <li data-id="playthrough_2_6">Head to the 2nd floor and talk to <a href="https://oldschool.runescape.wiki/w/King_Roald">King Roald</a> to start <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/Rune_Mysteries">Rune Mysteries</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon">, then head to the 3rd floor and bank everything</li>
+                <li data-id="playthrough_2_7">Light the 4 logs on the ground until 15 Firemaking <img src="https://oldschool.runescape.wiki/images/9/9b/Firemaking_icon.png?45ea0" alt="firemaking"></li>
+                <li data-id="playthrough_2_8">After getting level 15, Fletch <img src="https://oldschool.runescape.wiki/images/9/93/Fletching_icon.png?15cda" alt="fletching"> 1000 arrow shafts using the same logs</li>
+                <li data-id="playthrough_2_7">Bank at least 4 ashes and 7 logs for later</li>
+                <li data-id="playthrough_2_8">Withdraw GP, clue from <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> , air talisman, spade, mind + air runes, bread and shrimp from the bank</li>
+                <li data-id="playthrough_2_9">Level your thieving to level 5 on men </li>
+                <li data-id="playthrough_2_10">If Hardcore Ironman <img src="https://oldschool.runescape.wiki/images/b/b8/Hardcore_ironman_chat_badge.png?a1753" alt="hcim chathead"> , eat bread/shrimp, hop worlds for cabbages from basement for food.</li>
+                <li data-id="playthrough_2_11">Dig up the clue north of <a href="https://oldschool.runescape.wiki/w/Bob%27s_Brilliant_Axes.">Bob's Brilliant Axes</a></li>
+                <li data-id="playthrough_2_12">Buy a steel axe (make sure the world is fully stocked, the axe should only cost 200gp)</li>
+                <li data-id="playthrough_2_13">Start <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/The_Restless_Ghost">The Restless Ghost</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> by talking to <a href="https://oldschool.runescape.wiki/w/Father_Aereck">Father Aereck</a></li>
+                <li data-id="playthrough_2_14">Dig up the clue behind Lumbridge castle</li>
+                <li data-id="playthrough_2_15">Use wind strike to kill a giant rat for it's meat.</li>
+                <li data-id="playthrough_2_16">Hug the fence and run west, make sure to keep some run energy incase you need to evade anything that might attack you</li>
+                <li data-id="playthrough_2_17">Pick up 5 swamp tar around the swamp cave entrance</li>
+                <li data-id="playthrough_2_18">Talk to <a href="https://oldschool.runescape.wiki/w/Father_Urhney">Father Urhney</a> to get the Ghostspeak amulet and equip it</li>
+              </ul>
+
+            <h3 id="Draynor1"><a href="#Draynor1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/3">Draynor, Port Sarim, Falador, and Rimmington</a> <span id="playthrough_totals_3"></span></h3> 
+              <ul id="Draynor1_col" class="collapse in">
+                <li data-id="playthrough_3_1">Take the air talisman to the <a href="https://oldschool.runescape.wiki/w/Wizards%27_Tower">Wizard's Tower</a></li>
+                <li data-id="playthrough_3_2">Dig up the next clue for <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"></li>
+                <li data-id="playthrough_3_3">Pick up 2 cheese at <a href="https://oldschool.runescape.wiki/w/Aggie">Aggie's</a> house in Draynor Village</li>
+                <li data-id="playthrough_3_4">Buy 5 wines from <a href="https://oldschool.runescape.wiki/w/Fortunato">Fortunato</a> for emergency food if necessary</li>
+                <li data-id="playthrough_3_5">Dig up the casket at the Draynor pig pen</li>
+                <li data-id="playthrough_3_6">Finish <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> by talking to <a href="https://oldschool.runescape.wiki/w/Veos">Veos</a>, DO NOT use the XP lamp just yet</li>
+                <li data-id="playthrough_3_7">Walk over to Rimmington, pick up 1 snape grass near the crafting guild by the hobgoblins (don't waste run here so you can run in and out)</li>
+                <li data-id="playthrough_3_8">Walk to Falador, start <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/The_Knight%27s_Sword">The Knight's Sword</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> by talking to the <a href="https://oldschool.runescape.wiki/w/Squire">Squire</a></li>
+                <li data-id="playthrough_3_9">Minigame teleport to <a href="https://oldschool.runescape.wiki/w/Ferox_Enclave">Clan Wars (Ferox Enclave)</a></li>  
+              </ul>
+
+            <h3 id="Arganoog1"><a href="#Arganoog1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/3">Yanille, Arganoog, and Port Khazard</a> <span id="playthrough_totals_4"></span></h3> 
+              <ul id="Arganoog1_col" class="collapse in">
+                <li data-id="playthrough_4_1">Pick up 2 iron bars just North West of Ferox Enclave</li>
+                <li data-id="playthrough_4_2">Withdraw GP, steel axe, tinderbox, jug of water, 1 log, and jug of wine from the bank</li>
+                <li data-id="playthrough_4_3">Recharge your run energy by using the pool of refreshment, then use the green portal to teleport to <a href="https://oldschool.runescape.wiki/w/Castle_Wars">Castle Wars</a></li>
+                <li data-id="playthrough_4_4">Walk East over to Yanille and buy a pie dish at the Yanille Cooking Shop</li>
+                <li data-id="playthrough_4_5">Walk North East to Port Khazard and buy 1 swamp paste from the general store</li>
+                <li data-id="playthrough_4_6">Complete <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/Monk%27s_Friend">Monk's Friend</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"></li>
+                <li data-id="playthrough_4_7">Get 35 Woodcutting <img src="https://oldschool.runescape.wiki/images/f/f4/Woodcutting_icon.png?6ead4" alt="woodcut"> at oak trees and Firemake <img src="https://oldschool.runescape.wiki/images/9/9b/Firemaking_icon.png?45ea0" alt="firemaking"> the logs as you go</li>
+                <li data-id="playthrough_4_8">Head to Arganoog and steal from the baker's stall until 20 Thieving <img src="https://oldschool.runescape.wiki/images/4/4a/Thieving_icon.png?973fe" alt="thieving"> (bank 15 bread, ALL cakes, drop chocolates)</li>
+                <li data-id="playthrough_4_9">Steal silk until 25 Thieving <img src="https://oldschool.runescape.wiki/images/4/4a/Thieving_icon.png?973fe" alt="thieving"></li>
+                <li data-id="playthrough_4_10">Complete <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/Sheep_Herder">Sheep Herder</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"></li>
+                <li data-id="playthrough_4_11">Withdraw GP, swamp paste, and a small fishing net</li>
+                <li data-id="playthrough_4_12">Complete <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/Sea_Slug">Sea Slug</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> , fish shrimp while doing quest for the diary (keep the oyster pearls, they're over 500gp in the general store)</li>
+                <li data-id="playthrough_4_13">Buy as many sardines as you can fit in your inventory from the fish shop in Witchaven</li>
+                <li data-id="playthrough_4_14">Sell the silk for 60gp/ea, keep 10 in the bank for quests, you should have 10k GP now</li>
+                <li data-id="playthrough_4_15">Buy a Player-Owned House, then use the XP lamp from <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="https://oldschool.runescape.wiki/images/2/2b/Quest_point_icon.png?dc356" alt="qp icon"> on Construction <img src="https://oldschool.runescape.wiki/images/f/f6/Construction_icon.png?f9bf7" alt="construction"></li>
+                <li data-id="playthrough_4_16">Buy 2 ropes, 5 vials, 30 balls of wool, and 7 papyrus from the Arganoog General Store</li>
+                <li data-id="playthrough_4_17">Withdraw GP, rope, spade, and a few cakes</li>
+                <li data-id="playthrough_4_18">Dig up the Clue Hunter gloves and boots <a href="http://i.imgur.com/sOD5Zhz.png">north of Arganoog</a></li>
               </ul>
           </div>
           <div class="tab-pane" id="tabFAQ">      
@@ -125,26 +188,22 @@
         </div>
       </div>
       </div>
-
-  <div class="hiddenfile">
-    <input name="upload" type="file" id="fileInput" />
-  </div>
                 
   <a class="btn btn-default btn-sm fadingbutton back-to-top">Back to Top&thinsp;<span class="glyphicon glyphicon-arrow-up"></span></a>
                 
-  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/andris9/jStorage/v0.4.12/jstorage.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.buttflare.com/ajax/libs/jets/0.8.0/jets.min.js"></script>  -->
-  <script src="/js/jquery.highlight.js"></script>
-  <script src="/js/main.js"></script>
-  <!-- <script>
+  <!-- <script src="https://cdnjs.buttflare.com/ajax/libs/jets/0.8.0/jets.min.js"></script> -->
+  <script src="js/jquery.highlight.js"></script>
+  <script src="js/main.js"></script>
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-66576837-1', 'auto');
     ga('send', 'pageview');
-  </script> -->
+  </script>
 </body>
 </html>
