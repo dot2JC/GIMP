@@ -1,8 +1,8 @@
 # Group Ironman Plans
 ## TODO
-- [ ] Fix checkboxes
-- [ ] Fix .css
-- [ ] Fix .js
+- [ X ] Fix checkboxes
+- [ X ] Fix .css
+- [ X ] Fix .js
 - [ ] Finish writing
 - [ ] Add pretty pictures
 - [ ] Plan more GIMP
