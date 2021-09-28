@@ -1,15 +1,21 @@
 # Group Ironman Plans
+## Participants
+Name | IGN
+-----|-----
+John | (Username TBD)
+Kendall | (Username TBD)
+Tony | (Username TBD)
+
 ## TODO
 - [x] Fix checkboxes
 - [x] Fix .css
 - [x] Fix .js
+- [ ] Fix tabbing
 - [ ] Finish writing
 - [ ] Add pretty pictures
 - [ ] Plan more GIMP
 
 # Credits
-Original code from: https://github.com/ZKjellberg
-
-Compiled info from: http://nightleaf.org/
-
+Original code from: https://github.com/ZKjellberg  
+Compiled info from: http://nightleaf.org/  
 Writer and editor : https://github.com/dot2JC

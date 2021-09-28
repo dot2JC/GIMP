@@ -1,0 +1,7 @@
+body {
+  background-image: url('img/bg.jpg');
+  background-attachment: scroll;  
+  background-size: 100%;
+  background-repeat: repeat-y;
+  background-position: center;
+}
