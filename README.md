@@ -2,7 +2,7 @@
 ## Participants
 Name | IGN
 -----|-----
-John | (Username TBD)
+John | OG 2JC
 Kendall | (Username TBD)
 Tony | (Username TBD)
 Josh | (Username TBD)
