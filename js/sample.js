@@ -1,4 +1,4 @@
-var profilesKey = 'osrs_iron';
+var profilesKey = 'darksouls3_profiles';
 
 (function($) {
     'use strict';
@@ -19,8 +19,7 @@ var profilesKey = 'osrs_iron';
         "Spacelab" : "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/spacelab/bootstrap.min.css",
         "Superhero" : "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css",
         "United" : "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css",
-        "Yeti" : "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css",
-        /// "OSRS" : "css/test.css"
+        "Yeti" : "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css"
     };
 
     var profiles = $.jStorage.get(profilesKey, {});
@@ -143,6 +142,30 @@ var profilesKey = 'osrs_iron';
             $('#profileModal').modal('hide');
         });
 
+        $('#profileNG\\+').click(function() {
+            $('#NG\\+Modal').modal('show');
+        });
+
+        $('#NG\\+ModalYes').click(function(event) {
+            event.preventDefault();
+            if (!confirm('Are you sure you wish to begin the next journey?')) {
+                return;
+            }
+            $('[id^="playthrough_"], [id^="crow_"]').filter(':checked').each(function(){
+                profiles[profilesKey][profiles.current].checklistData[this.id] = false;
+            });
+            $.each(profiles[profilesKey][profiles.current].hidden_categories, function(f){
+                profiles[profilesKey][profiles.current].hidden_categories[f] = false;
+            });
+            if (profiles[profilesKey][profiles.current].journey < 3) {
+                profiles[profilesKey][profiles.current].journey++;
+            }
+            $.jStorage.set(profilesKey, profiles);
+            populateChecklists();
+            restoreState(profiles.current);
+            $('#NG\\+Modal').modal('hide');
+        });
+
         $('#profileExport').click(function(){
             var filename = 'profiles.json';
             var text = JSON.stringify(profiles);
@@ -224,6 +247,19 @@ var profilesKey = 'osrs_iron';
             else {var c = Math.round((a+b)/2); $('html, body').scrollTop(oldPos+Math.round(labels.eq(c).offset().top)-Math.round(oldOff[c]));}
         });
 
+        $('[data-ng-toggle]').change(function() {
+            var journey = $(this).data('ng-toggle');
+
+            profiles[profilesKey][profiles.current].journey = +journey
+            $.jStorage.set(profilesKey, profiles);
+
+            toggleFilteredClasses('h_ng\\+');
+            toggleFilteredClasses('s_ng\\+');
+            toggleFilteredClasses('s_ng\\+\\+');
+
+            calculateTotals();
+        });
+
         $('[data-item-toggle]').change(function() {
             var type = $(this).data('item-toggle');
             var to_hide = $(this).is(':checked');
@@ -271,7 +307,7 @@ var profilesKey = 'osrs_iron';
             profiles[profilesKey][profile_name].hide_completed = false;
         if (!('journey' in profiles[profilesKey][profile_name]))
             profiles[profilesKey][profile_name].journey = 1;
-        /*if (!('hidden_categories' in profiles[profilesKey][profile_name]))
+        if (!('hidden_categories' in profiles[profilesKey][profile_name]))
             profiles[profilesKey][profile_name].hidden_categories = {
                 f_boss: false,
                 f_miss: false,
@@ -293,7 +329,6 @@ var profilesKey = 'osrs_iron';
                 f_cov: false,
                 f_misc: false
             };
-        */
     }
 
     /// restore all saved state, except for the current tab
