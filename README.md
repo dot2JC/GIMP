@@ -15,8 +15,10 @@ Josh | (Username TBD)
 - [x] Fix tabbing
 - [x] Rewrite FAQ
 - [x] Reimplement (some of) options tab
-- [ ] Finish writing
-- [ ] Add pretty pictures
+- [x] Finish writing
+- [ ] Fix Back to Top  
+- [ ] Fix Hide Completed Bottom Button  
+- [ ] Add pretty pictures/icons
 - [ ] Plan more GIMP
 - [ ] Add WiseOldMan API?
 
