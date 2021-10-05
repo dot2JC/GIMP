@@ -23,7 +23,8 @@ Kevin | Limpwarrior5
 - [x] Finish writing
 - [x] Fix Back to Top  
 - [x] Fix Hide Completed Bottom Button  
-- [ ] Add pretty pictures/icons
+- [x] Add icons  
+- [ ] Add pretty pictures (inventory setups, gear, etc.)  
 - [ ] Plan more GIMP
 - [ ] Add WiseOldMan API?
 
@@ -32,4 +33,4 @@ Original code from: https://github.com/ZKjellberg
 Compiled info from: http://nightleaf.org/  
 Writer and editor : https://github.com/dot2JC  
 Tabbing, Back to Top, and Hide Completed bottom button fix by: Megan  
-NPC Tag List compiled by: Kendall
+NPC Tag List compiled by: 
