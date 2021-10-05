@@ -1,8 +1,8 @@
 # Group Ironman Plans
 
 ## The Group Iron Guide + Tools
-Here is a link to <a href="https://dot2jc.github.io/GIMP/">the guide</a>.
-If you would like to track our group's XP, here is <a href="https://wiseoldman.net/groups/1677"> the WiseOldMan group</a>. Contact John for RuneLite (WiseOldMan) plugin information.
+Here is a link to <a href="https://dot2jc.github.io/GIMP/">the guide</a>.  
+If you would like to track our group's XP, here is <a href="https://wiseoldman.net/groups/1677"> the WiseOldMan group</a>. Contact John for RuneLite (WiseOldMan) plugin information.  
 
 ## Participants
 Name | IGN
@@ -31,4 +31,5 @@ Kevin | Limpwarrior5
 Original code from: https://github.com/ZKjellberg  
 Compiled info from: http://nightleaf.org/  
 Writer and editor : https://github.com/dot2JC  
-Tabbing fix       : Megan
+Tabbing, Back to Top, and Hide Completed bottom button fix by: Megan  
+NPC Tag List compiled by: Kendall

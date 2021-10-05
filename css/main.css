@@ -51,6 +51,16 @@ h3 {
     background-color: rgb(255, 246, 18);
 }
 
+#backToTop {
+  display: none;
+  position: fixed;
+}
+
+#hideCompleted {
+  display: none;
+  position: fixed;
+}
+
 .hiddenfile {
  width: 0px;
  height: 0px;

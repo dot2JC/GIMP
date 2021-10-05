@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="utf-8">
   <title>G.I.M.P. Guide</title>
@@ -15,6 +16,7 @@
   <!-- <link href="css/test.css" rel="stylesheet"> -->
   <link href="css/main.css" rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -59,11 +61,13 @@
                 <span class="glyphicon glyphicon-eye-close"></span>
                 <span class="glyphicon glyphicon-eye-open"></span>
                 Hide Completed
-                <a class="btn btn-default btn-sm fadingbutton togglehide" onclick="$('#toggleHideCompleted').click();">
+
+                <a class="btn btn-default btn-sm fadingbutton togglehide" id="hideCompleted" onclick="$('#toggleHideCompleted').click();">
                   <span class="glyphicon glyphicon-eye-close"></span>
                   <span class="glyphicon glyphicon-eye-open"></span>
                   Hide Completed
                 </a>
+
               </label>
             </div> 
           </div>
@@ -923,7 +927,7 @@
     <input name="upload" type="file" id="fileInput" />
   </div>
 
-  <a class="btn btn-default btn-sm fadingbutton back-to-top">Back to Top&thinsp;<span class="glyphicon glyphicon-arrow-up"></span></a>
+  <a class="btn btn-default btn-sm fadingbutton back-to-top" onclick="backToTopFunction()" id="backToTop">Back to Top&thinsp;<span class="glyphicon glyphicon-arrow-up"></span></a>
                 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/andris9/jStorage/v0.4.12/jstorage.min.js"></script>
@@ -938,6 +942,46 @@
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-66576837-1', 'auto');
     ga('send', 'pageview');
+  </script>
+  <script>
+      backToTopButton = document.getElementById("backToTop");
+  hideCompletedButton = document.getElementById("hideCompleted");
+
+  window.onscroll = function () {
+    scrollFunctionToTop()
+  };
+
+  function scrollFunctionToTop() {
+    if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+      $("#backToTop").fadeIn("slow");
+      backToTopButton.style.display = "block";
+    } else {
+      $("#backToTop").fadeOut("slow");
+    }
+  }
+
+  $(window).scroll(function () {
+    scrollFunctionHideCompleted()
+  });
+
+  function scrollFunctionHideCompleted() {
+    if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+      $("#hideCompleted").fadeIn("slow");
+      hideCompletedButton.style.display = "block";
+    } else {
+      $("#hideCompleted").fadeOut("slow");
+    }
+  }
+
+  function backToTopFunction() {
+    $("html, body").animate({
+        scrollTop: 0,
+      },
+      1100,
+      "swing"
+    );
+    return false;
+  }
   </script>
 </body>
 </html>
