@@ -1,12 +1,17 @@
 # Group Ironman Plans
+
+## The Group Iron Guide + Tools
+Here is a link to <a href="https://dot2jc.github.io/GIMP/">the guide</a>.
+If you would like to track our group's XP, here is <a href="https://wiseoldman.net/groups/1677"> the WiseOldMan group</a>. Contact John for RuneLite (WiseOldMan) plugin information.
+
 ## Participants
 Name | IGN
 -----|-----
 John | OG 2JC
-Kendall | (Username TBD)
+Kendall | OG 924Kendie
 Tony | (Username TBD)
 Josh | (Username TBD)
-(TBD) | (Username TBD)
+Kevin | Limpwarrior5
 
 ## TODO
 - [x] Fix checkboxes
