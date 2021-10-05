@@ -1,9 +1,9 @@
 # Group Ironman Plans
 
 ## The Group Iron Guide + Tools
-Here is a link to <a href="https://dot2jc.github.io/GIMP/">the guide</a>.  
+Here is a link to the <a href="https://dot2jc.github.io/GIMP/">Group IronMan Player</a> guide.  
 If you would like to track our group's XP, here is <a href="https://wiseoldman.net/groups/1677"> the WiseOldMan group</a>. Contact John for RuneLite (WiseOldMan) plugin information.  
-
+<!-- WOM: 836-551-748 -->
 ## Participants
 Name | IGN
 -----|-----
@@ -21,8 +21,8 @@ Kevin | Limpwarrior5
 - [x] Rewrite FAQ
 - [x] Reimplement (some of) options tab
 - [x] Finish writing
-- [ ] Fix Back to Top  
-- [ ] Fix Hide Completed Bottom Button  
+- [x] Fix Back to Top  
+- [x] Fix Hide Completed Bottom Button  
 - [ ] Add pretty pictures/icons
 - [ ] Plan more GIMP
 - [ ] Add WiseOldMan API?
