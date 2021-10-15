@@ -3,7 +3,7 @@
 ## The Group Iron Guide + Tools
 Link to the guide: <a href="https://dot2jc.github.io/GIMP/">Group IronMan Player Guide</a>  
 Group XP tracker: <a href="https://wiseoldman.net/groups/1677">WiseOldMan</a>  
-Contact John for RuneLite (WiseOldMan) plugin information for RuneLite.  <!-- WOM: 836-551-748 -->
+Contact John for RuneLite (WiseOldMan) plugin information for RuneLite.  <!-- WOM: 836-551-748 -->  
 Copy and Paste this list into your RuneLite's <a href="https://pastebin.com/DTXrfxVp">NPC Indicators</a>  
 
 ## Participants
