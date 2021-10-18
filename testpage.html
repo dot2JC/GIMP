@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>G.I.M.P. Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <meta name="description" content="This will be the home to our clan's Group Ironman Guide.">
+  <meta name="author" content="JC">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link id="bootstrap" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- <link href="css/test.css" rel="stylesheet"> -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+    
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="nav-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#tabPlaythrough" data-toggle="tab" data-target="#tabPlaythrough,#btnHideCompleted">Guide</a></li>
+              <li><a href="#tabHiscores" data-toggle="tab" data-target="#tabHiscores">Hi-Scores</a></li>
+              <li><a href="#tabRuneLite" data-toggle="tab" data-target="#tabRuneLite">RuneLite</a></li>
+              <li><a href="#tabFAQ" data-toggle="tab" data-target="#tabFAQ"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
+              <li><a href="#tabOptions" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img src="img/gimp_banner.jpg" alt="ironman banner credit to /u/Akke_blakk95" width="475" height="auto">
+            <h1><u>G</u>roup&nbsp;<u>I</u>ron<u>M</u>an&nbsp;<u>P</u>layer&nbsp;Guide</h1>
+            <p class="lead">Have any sort of suggestions? Message me on <a href="https://discordapp.com/users/114200877627211781">Discord</a>!
+          </div>
+        </div>
+    
+        <div class="tab-content">
+          <!-- Hide Completed Toggle -->
+          <div class="tab-pane active in" id="btnHideCompleted">
+            <div class="btn-group" role="group" data-toggle="buttons">
+              <label class="btn btn-default">
+                <input type="checkbox" id="toggleHideCompleted">
+                <span class="glyphicon glyphicon-eye-close"></span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                Hide Completed
+
+                <a class="btn btn-default btn-sm fadingbutton togglehide" id="hideCompleted" onclick="$('#toggleHideCompleted').click();">
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Hide Completed
+                </a>
+
+              </label>
+            </div> 
+          </div>
+          <!-- PLAYTHROUGH START -->
+          <div class="tab-pane active" id="tabPlaythrough">
+            <h2>Group Ironman Journey <span id="playthrough_overall_total"></span></h2>
+            <ul class="table_of_contents">
+              <li><a href="#Important_Notes">Important Notes</a> <span id="playthrough_nav_totals_1"></span></li>
+              <li><a href="#Lumbridge1">Lumbridge 1</a> <span id="playthrough_nav_totals_2"></span></li>
+              <li><a href="#Draynor1">Draynor, Port Sarim, Falador, and Rimmington 1</a> <span id="playthrough_nav_totals_3"></span></li>
+              <li><a href="#Arganoog1">Yanille, Arganoog, and Port Khazard</a> <span id="playthrough_nav_totals_4"></span></li>
+              <li><a href="#Gnome1">Barbarians, Waterfalls, and Gnomes</a> <span id="playthrough_nav_totals_5"></span></li>
+              <li><a href="#Arganoog2">Return to Arganoog, heading to Varrock, 50 Woodcutting/Firemaking</a> <span id="playthrough_nav_totals_6"></span></li>
+              <li><a href="#Draynor2">Return to Draynor, Starting Construction, Visiting Great Kourend</a> <span id="playthrough_nav_totals_7"></span></li>
+              <li><a href="#Grind1">The First Grind</a> <span id="playthrough_nav_totals_8"></span></li>
+              <li><a href="#Lumbridge2">Lumbridge 2</a> <span id="playthrough_nav_totals_9"></span></li>
+              <li><a href="#Varrock1">Varrock 1</a> <span id="playthrough_nav_totals_10"></span></li>
+              <li><a href="#Draynor3">Draynor, Port Sarim, Falador, and Rimmington 2</a> <span id="playthrough_nav_totals_11"></span></li>
+              <li><a href="#Desert1">Al-Kharid and Port Khazard</a> <span id="playthrough_nav_totals_12"></span></li>
+              <li><a href="#Grind2">The Second Grind: Grind Harder</a> <span id="playthrough_nav_totals_13"></span></li>
+              <li><a href="#Arganoog3">Fighting, Gnomes, Waterfalls, and Arganoog</a> <span id="playthrough_nav_totals_14"></span></li>
+              <li><a href="#Lumbridge3">Lumbridge 3 and a Lil' More Zeah</a> <span id="playthrough_nav_totals_15"></span></li>
+              <li><a href="#Draynor4">Draynor 4 and Varrock 2</a> <span id="playthrough_nav_totals_16"></span></li>
+              <li><a href="#Gnome2">Gnomes and Karamja</a> <span id="playthrough_nav_totals_17"></span></li>
+              <li><a href="#Arganoog4">Arganoog 4 and Camelot/Seers 1</a> <span id="playthrough_nav_totals_18"></span></li>
+              <li><a href="#Draynor5">Falador, Port Sarim, and Varrock</a> <span id="playthrough_nav_totals_19"></span></li>
+              <li><a href="#Arganoog5">Arganoog 5, Karamja 2, Camelot/Seers 2, and Falador 4</a> <span id="playthrough_nav_totals_20"></span></li>
+              <li><a href="#Desert2">Desert 2 and Karamja 2</a> <span id="playthrough_nav_totals_21"></span></li>
+              <li><a href="#Grind3">The Third Grind: Return of the Grind</a> <span id="playthrough_nav_totals_22"></span></li>
+              <li><a href="#Desert3">Desert 3, Camelot/Seers 3, and Falador 5</a> <span id="playthrough_nav_totals_23"></span></li>
+              <li><a href="#Grind4">The Fourth Grind: The Grind Strikes Back</a> <span id="playthrough_nav_totals_24"></span></li>
+              <li><a href="#Varrock2">Varrock 4, Morytania 1, Lumbridge 4, and Draynor 5</a> <span id="playthrough_nav_totals_25"></span></li>
+              <li><a href="#Draynor6">Dragon Slayer Dave</a> <span id="playthrough_nav_totals_26"></span></li>
+              <li><a href="#Lumbridge4">Ranged, Slayer, and Some Quests</a> <span id="playthrough_nav_totals_27"></span></li>
+              <li><a href="#Grind5">The Fifth Grind: A Good Day to Grind Hard</a> <span id="playthrough_nav_totals_28"></span></li>
+              <li><a href="#Lumbridge5">Watch the Throne</a> <span id="playthrough_nav_totals_29"></span></li>
+              <li><a href="#Zeah1">Supplies! More Quests!</a> <span id="playthrough_nav_totals_30"></span></li>
+              <li><a href="#Grind6">The Sixth Grind: Saw-Con</a> <span id="playthrough_nav_totals_31"></span></li>
+              <li><a href="#Quest1">Quest-ching</a> <span id="playthrough_nav_totals_32"></span></li>
+              <li><a href="#Grind7">The Seventh Grind: Brace For a Golden Age</a> <span id="playthrough_nav_totals_33"></span></li>
+              <li><a href="#Quest2">Sir Quest-A-Lot</a> <span id="playthrough_nav_totals_34"></span></li>
+              <li><a href="#Goals1">Further Goals</a> <span id="playthrough_nav_totals_35"></span></li>
+            </ul>
+
+            <!-- <div class="form-group">
+              <input type="search" id="playthrough_search" class="form-control" placeholder="Start typing to filter results..." />
+            </div> -->
+
+          <div id="playthrough_list">
+            <h3 id="Important_Notes"><a href="#Important_Notes_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/1">Important Notes</a> <span id="playthrough_totals_1"></span></h3>
+              <ul id="Important_Notes_col" class="collapse in">
+                <li data-id="playthrough_1_1">Use EVERY book and lamp on Herblore <img src="img/icons/herb.png"> until you reach level 77. After 77 Herblore <img src="img/icons/herb.png">, put them on Prayer <img src="img/icons/pray.png">(if Hardcore Ironman <img src="https://oldschool.runescape.wiki/images/b/b8/Hardcore_ironman_chat_badge.png?a1753" alt="hcim chathead"> ), Agility <img src="img/icons/agil.png">, or Runecrafting <img src="img/icons/rc.png"> (whichever you hate most)</li>
+                <li data-id="playthrough_1_2">Enable Authenticator on your account</li>
+                <li data-id="playthrough_1_3">Make sure to start with a FEMALE character (we use this later for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Recruitment_Drive">Recruitment Drive</a> <img src="img/icons/quest.png"> (it saves 3K GP))</li>
+                <li data-id="playthrough_1_4">Before leaving Tutorial Island, make sure you stop at the NODE to get the group together and make a Group Ironman</li>
+              </ul>
+
+            <h3 id="Lumbridge1"><a href="#Lumbridge1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/2">Lumbridge 1 - Starting up and Gathering</a> <span id="playthrough_totals_2"></span></h3>
+              <ul id="Lumbridge1_col" class="collapse in">
+                <li data-id="playthrough_2_1">Upon arriving in Lumbridge, sell your bronze dagger, sword, axe, wooden shield, and shortbow to the general store</li>
+                <li data-id="playthrough_2_2">Buy a spade and then start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_2_3">Drop your runes and ask for more from the magic tutor, pickup your runes after you receive the free ones</li>
+                <li data-id="playthrough_2_4">Pickup every item spawn in the castle, including the cellar, don't forget your cabbage!</li>
+                <li data-id="playthrough_2_5">Fill a jug with water in the kitchen or the cellar</li>
+                <li data-id="playthrough_2_6">Head to the 2nd floor and talk to <a href="https://oldschool.runescape.wiki/w/Duke_Horacio">Duke Horacio</a> to start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rune_Mysteries">Rune Mysteries</a> <img src="img/icons/quest.png">, then head to the 3rd floor and bank everything</li>
+                <li data-id="playthrough_2_7">Light the 4 logs on the ground until 15 Firemaking <img src="img/icons/fm.png"></li>
+                <li data-id="playthrough_2_8">After getting level 15, Fletch <img src="img/icons/fletch.png"> 1000 arrow shafts using the same logs</li>
+                <li data-id="playthrough_2_7">Bank at least 4 ashes and 7 logs for later</li>
+                <li data-id="playthrough_2_8">Withdraw from the bank, and you inventory should look like<br> <img src="https://i.imgur.com/5WeXtJz.png"></li>
+                <li data-id="playthrough_2_9">Level your Thieving <img src="img/icons/thieving.png"> to level 5 on men </li>
+                <li data-id="playthrough_2_10">If Hardcore Ironman <img src="img/icons/hcim.png"> , eat bread/shrimp, hop worlds for cabbages from basement for food.</li>
+                <li data-id="playthrough_2_11">Dig up the clue north of <a href="https://oldschool.runescape.wiki/w/Bob%27s_Brilliant_Axes.">Bob's Brilliant Axes</a></li>
+                <li data-id="playthrough_2_12">Buy a steel axe (make sure the world is fully stocked, the axe should only cost 200gp)</li>
+                <li data-id="playthrough_2_13">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Restless_Ghost">The Restless Ghost</a> <img src="img/icons/quest.png"> by talking to <a href="https://oldschool.runescape.wiki/w/Father_Aereck">Father Aereck</a></li>
+                <li data-id="playthrough_2_14">Dig up the clue behind Lumbridge castle</li>
+                <li data-id="playthrough_2_15">Use wind strike to kill a giant rat for it's meat.</li>
+                <li data-id="playthrough_2_16">Hug the fence and run west, make sure to keep some run energy incase you need to evade anything that might attack you</li>
+                <li data-id="playthrough_2_17">Pick up 5 swamp tar around the swamp cave entrance</li>
+                <li data-id="playthrough_2_18">Talk to <a href="https://oldschool.runescape.wiki/w/Father_Urhney">Father Urhney</a> to get the Ghostspeak amulet and equip it</li>
+              </ul>
+
+            <h3 id="Draynor1"><a href="#Draynor1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/3">Draynor, Port Sarim, Falador, and Rimmington 1</a> <span id="playthrough_totals_3"></span></h3> 
+              <ul id="Draynor1_col" class="collapse in">
+                <li data-id="playthrough_3_1">Take the air talisman to the <a href="https://oldschool.runescape.wiki/w/Wizards%27_Tower">Wizard's Tower</a></li>
+                <li data-id="playthrough_3_2">Dig up the next clue for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_3_3">Pick up 2 cheese at <a href="https://oldschool.runescape.wiki/w/Aggie">Aggie's</a> house in Draynor Village</li>
+                <li data-id="playthrough_3_4">Buy 5 wines from <a href="https://oldschool.runescape.wiki/w/Fortunato">Fortunato</a> for emergency food if necessary</li>
+                <li data-id="playthrough_3_5">Dig up the casket at the Draynor pig pen</li>
+                <li data-id="playthrough_3_6">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="img/icons/quest.png"> by talking to <a href="https://oldschool.runescape.wiki/w/Veos">Veos</a>, DO NOT use the XP lamp just yet</li>
+                <li data-id="playthrough_3_7">Walk over to Rimmington, pick up 1 snape grass near the crafting guild by the hobgoblins (don't waste run here so you can run in and out)</li>
+                <li data-id="playthrough_3_8">Walk to Falador, start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Knight%27s_Sword">The Knight's Sword</a> <img src="img/icons/quest.png"> by talking to the <a href="https://oldschool.runescape.wiki/w/Squire">Squire</a></li>
+                <li data-id="playthrough_3_9"><img src="img/icons/minigame.png"> Minigame teleport to <a href="https://oldschool.runescape.wiki/w/Ferox_Enclave">Clan Wars (Ferox Enclave)</a> <img src="img/icons/minigame.png"></li>  
+              </ul>
+
+            <h3 id="Arganoog1"><a href="#Arganoog1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/3">Yanille, Arganoog, and Port Khazard</a> <span id="playthrough_totals_4"></span></h3> 
+              <ul id="Arganoog1_col" class="collapse in">
+                <li data-id="playthrough_4_1">Pick up 2 iron bars just North West of Ferox Enclave</li>
+                <li data-id="playthrough_4_2">Withdraw GP, steel axe, tinderbox, jug of water, 1 log, and jug of wine from the bank</li>
+                <li data-id="playthrough_4_3">Recharge your run energy by using the <a href="https://oldschool.runescape.wiki/w/Pool_of_Refreshment">Pool of Refreshment</a> , then use the green portal to teleport to <a href="https://oldschool.runescape.wiki/w/Castle_Wars">Castle Wars</a></li>
+                <li data-id="playthrough_4_4">Walk East over to Yanille and buy a pie dish at the Yanille Cooking Shop</li>
+                <li data-id="playthrough_4_5">Walk North East to Port Khazard and buy 1 swamp paste from the general store</li>
+                <li data-id="playthrough_4_6">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Monk%27s_Friend">Monk's Friend</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_4_7">Get 35 Woodcutting <img src="img/icons/wc.png"> at oak trees and Firemake <img src="img/icons/fm.png"> the logs as you go</li>
+                <li data-id="playthrough_4_8">Head to Arganoog and steal from the baker's stall until 20 Thieving <img src="img/icons/thieving.png"> (bank 15 bread, ALL cakes, drop chocolates)</li>
+                <li data-id="playthrough_4_9">Steal silk until 25 Thieving <img src="img/icons/thieving.png"></li>
+                <li data-id="playthrough_4_10">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Sheep_Herder">Sheep Herder</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_4_11">Withdraw GP, swamp paste, and a small fishing net</li>
+                <li data-id="playthrough_4_12">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Sea_Slug">Sea Slug</a> <img src="img/icons/quest.png"> , fish shrimp while doing quest for the diary (keep the oyster pearls, they're over 500gp in the general store)</li>
+                <li data-id="playthrough_4_13">Buy as many sardines as you can fit in your inventory from the fish shop in Witchaven</li>
+                <li data-id="playthrough_4_14">Sell the silk for 60gp/ea, keep 10 in the bank for quests, you should have 10k GP now</li>
+                <li data-id="playthrough_4_15">Buy a Player-Owned House, then use the XP lamp from <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/X_Marks_the_Spot">X Marks the Spot</a> <img src="img/icons/quest.png"> on Construction <img src="img/icons/cons.png"></li>
+                <li data-id="playthrough_4_16">Buy 2 ropes, 5 vials, 30 balls of wool, and 7 papyrus from the Arganoog General Store</li>
+                <li data-id="playthrough_4_17">Withdraw GP, rope, spade, and a few cakes</li>
+                <li data-id="playthrough_4_18">Dig up the Clue Hunter gloves and boots <a href="http://i.imgur.com/sOD5Zhz.png">north of Arganoog</a></li>
+              </ul>
+
+            <h3 id="Gnome1"><a href="#Gnome1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/4">Barbarians, Waterfalls, and Gnomes</a> <span id="playthrough_totals_5"></span></h3> 
+              <ul id="Gnome1_col" class="collapse in">
+                <li data-id="playthrough_5_1">Buy a Greenman's ale from <a href="https://oldschool.runescape.wiki/w/Rasolo">Rasolo</a></li>
+                <li data-id="playthrough_5_2">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dwarf_Cannon">Dwarf Cannon</a> <img src="img/icons/quest.png"> up until you need to go to Ice Mountain </li>
+                <li data-id="playthrough_5_3">Pick up 130 planks north of the <a href="https://oldschool.runescape.wiki/w/Barbarian_Outpost_Agility_Course">Barbarian Outpost Agility Course</a></li>
+                <li data-id="playthrough_5_4">Complete the <a href="https://oldschool.runescape.wiki/w/Barbarian_Assault">Barbarian Assault</a> tutorial to unlock the <img src="img/icons/minigame.png"> minigame teleport <img src="img/icons/minigame.png"> (you can skip, just make sure you can teleport there before you leave)</li>
+                <li data-id="playthrough_5_5">Start <a href="https://oldschool.runescape.wiki/w/Alfred_Grimhand%27s_Barcrawl">Alfred Grimhand's Barcrawl</a> </li>
+                <li data-id="playthrough_5_6">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Waterfall_Quest">Waterfall Quest</a> <img src="img/icons/quest.png"> until you need to go to the gnome maze (remember to read the book)</li>
+                <li data-id="playthrough_5_7">Walk over to the Gnome Stronghold</li>
+                <li data-id="playthrough_5_8">Buy a drink from <a href="https://oldschool.runescape.wiki/w/Blurberry">Blurberry</a> as part of <a href="https://oldschool.runescape.wiki/w/Alfred_Grimhand%27s_Barcrawl">Alfred Grimhand's Barcrawl</a> </li>
+                <li data-id="playthrough_5_9">Buy the following items from <a href="https://oldschool.runescape.wiki/w/Heckel_Funch">Heckel Funch</a> (East of <a href="https://oldschool.runescape.wiki/w/Blurberry">Blurberry</a>) <br> 1 Pineapple <br> 1 Orange <br> 2 Lemons <br> 1 Cocktail Shaker <br> 1 Cocktail Glass <br> 1 Dwellberries <br> 1 Bucket of Milk <br> 1 Chocolate Dust </li>    
+                <li data-id="playthrough_5_10">Buy 1000 bronze arrowheads (100/world for 1gp/ea) at the wepon shop on the 3rd floor South of the ladder</li>
+                <li data-id="playthrough_5_11">Make the hangover cure (bucket of milk, chocolate dust, and snape grass) for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Plague_City">Plague City</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_5_12">Walk to Arganoog</li>
+              </ul>
+
+            <h3 id="Arganoog2"><a href="#Arganoog2_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/4">Return to Arganoog, heading to Varrock, 50 Woodcutting/Firemaking</a> <span id="playthrough_totals_6"></span></h3> 
+              <ul id="Arganoog2_col" class="collapse in">
+                <li data-id="playthrough_6_1">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Plague_City">Plague City</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_6_2">Home teleport to Lumbridge and run North to Varrock East bank</li>
+                <li data-id="playthrough_6_3">Equip your Ghostspeak amulet (if you banked it at some point)</li>
+                <li data-id="playthrough_6_4">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Daddy%27s_Home">Daddy's Home</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_6_5">Sell the 8 bolts of cloth from the quest reward back to the sawmill</li>
+                <li data-id="playthrough_6_6">Buy 500 bronze nails at the sawmill</li>
+                <li data-id="playthrough_6_7"><img src="img/icons/minigame.png"> Minigame teleport <img src="img/icons/minigame.png"> to Clan Wars, recharge energy, and use the portal to Castle Wars</li>
+                <li data-id="playthrough_6_8">Withdraw your steel axe and a tinderbox</li>
+                <li data-id="playthrough_6_9">Run <a href="http://i.imgur.com/cOzCs3x.png">South-West of Castle Wars</a></li>
+                <li data-id="playthrough_6_10">Woodcut <img src="img/icons/wc.png"> and Firemake <img src="img/icons/fm.png"> teak logs until you have 50 Firemaking <img src="img/icons/fm.png"></li>
+                <li data-id="playthrough_6_11">Home teleport back to Lumbridge</li>
+                <li data-id="playthrough_6_12">Talk to the ghost for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Restless_Ghost">The Restless Ghost</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_6_13">Run to Draynor bank</li>
+              </ul>
+
+            <h3 id="Draynor2"><a href="#Draynor2_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/5">Return to Draynor, Starting Construction, Visiting Great Kourend</a> <span id="playthrough_totals_7"></span></h3> 
+              <ul id="Draynor2_col" class="collapse in">
+                <li data-id="playthrough_7_1">Withdraw the following from the bank<br>GP<br>Bronze Nails<br>Hammer<br>Saw<br>120 Noted Planks<br>1k Arrows Shafts<br>1k Bronze Arrowheads<br>1 Teleport to House Tablet</li>
+                <li data-id="playthrough_7_2">Buy a <a href="https://oldschool.runescape.wiki/w/Chronicle">Chronicle</a> and 2 teleport cards from <a href="https://oldschool.runescape.wiki/w/Diango">Diango</a></li>
+                <li data-id="playthrough_7_3">Use your Teleport to House Tablet and train Construction <img src="img/icons/cons.png"> with your planks, make bookcases until out of planks using <a href="https://oldschool.runescape.wiki/w/Phials">Phials</a> to un-note planks</li>
+                <li data-id="playthrough_7_4">Walk South to Port Sarim</li>
+                <li data-id="playthrough_7_5">Buy 1000 feathers from the fishing store (you should have just enough GP, if not it's not a big deal)</li>
+                <li data-id="playthrough_7_6">Take the boat to Great Kourend</li>
+                <li data-id="playthrough_7_7">Make the long trek to Wintertodt, fletch <img src="img/icons/fletch.png"> 1k bronze arrows while walking</li>
+                <li data-id="playthrough_7_8">Note: If you see wolves, you went the wrong way, you should not be attacked.</li>
+              </ul>
+
+            <h3 id="Grind1"><a href="#Grind1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/5">The First Grind</a> <span id="playthrough_totals_8"></span></h3> 
+              <ul id="Grind1_col" class="collapse in">
+                <li data-id="playthrough_8_1">Do Wintertodt until you have at least 200k GP, you also need 22 Fletching <img src="img/icons/fletch.png"></li>
+                <li data-id="playthrough_8_2">Note: You shouldn't be dying with only 10HP <img src="img/icons/hp.png">, but attention is still necessary, it's a long walk back. Make sure you wear the Clue Hunter Boots and Gloves.</li>
+                <li data-id="playthrough_8_3">OPTIONAL: Stay until you have 12 Magic Logs for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Desert_Treasure">Desert Treasure</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_8_4">OPTIONAL: Get 99 Firemaking <img src="img/icons/fm.png">, don't open the crates in your bank once you have 200k GP</li>
+              </ul>
+
+            <h3 id="Lumbridge2"><a href="#Lumbridge2_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/5">Lumbridge 2</a> <span id="playthrough_totals_9"></span></h3> 
+              <ul id="Lumbridge2_col" class="collapse in">
+                <li data-id="playthrough_9_1">Withdraw the following from the bank<br>GP<br>A few cakes<br>Chronicle<br>ALL of your air and mind runes<br>Teleport to House Tablet<br>Teleport to Lumbridge Tablet</li>
+                <li data-id="playthrough_9_2">Run to the Mage Tutor, drop your runes and grab more (don't forget to pickup your runes)</li>
+                <li data-id="playthrough_9_3">Buy 3 Buckets and 1 Bucket Pack from the General Store</li>
+                <li data-id="playthrough_9_4">Walk North to Fred's Farm</li>
+                <li data-id="playthrough_9_5">Kill a chicken with wind strike for it's meat</li>
+                <li data-id="playthrough_9_6">Pickup the egg to the north of Fred</li>
+                <li data-id="playthrough_9_7">Kill 1 cow calf for meat</li>
+                <li data-id="playthrough_9_8">Fill 3 buckets with milk at the dairy cow north of the windmill</li>
+                <li data-id="playthrough_9_9">Walk up to Barbarian Village (you can walk up East of the Draynor Manor)</li>
+                <li data-id="playthrough_9_10">Grab the ammo mould and the notes for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dwarf_Cannon">Dwarf Cannon</a> <img src="img/icons/quest.png"> </li>
+                <li data-id="playthrough_9_11">Use the Chronicle teleport, walk North to Gertrude's house</li>
+              </ul>
+
+            <h3 id="Varrock1"><a href="#Varrock1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/6">Varrock 1</a> <span id="playthrough_totals_10"></span></h3> 
+              <ul id="Varrock1_col" class="collapse in">
+                <li data-id="playthrough_10_1">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Gertrude%27s_Cat">Gertrude's Cat</a> <img src="img/icons/quest.png"> , talk to the kids at the Varrock square</li>
+                <li data-id="playthrough_10_2">Talk to Romeo to start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Romeo_%26_Juliet">Romeo & Juliet</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_10_3">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Demon_Slayer">Demon Slayer</a> <img src="img/icons/quest.png"> , grab the 2 keys located in Varrock</li>
+                <li data-id="playthrough_10_4">Talk to Reldo for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Knight%27s_Sword">The Knight's Sword</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_10_5">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Shield_of_Arrav">Shield of Arrav</a> <img src="img/icons/quest.png"> on any visit to Varrock</li>
+                <li data-id="playthrough_10_6">Buy a fire staff</li>
+                <li data-id="playthrough_10_7">Buy a newspaper from Benny</li>
+                <li data-id="playthrough_10_8">Buy gloves and a pink skirt from the clothes shop</li>
+                <li data-id="playthrough_10_9">Buy a rotten tomato from the crate near <a href="https://oldschool.runescape.wiki/w/Toby">Toby</a></li>
+                <li data-id="playthrough_10_10">Get a drink from the bar south of the Varrock fountain for <a href="https://oldschool.runescape.wiki/w/Alfred_Grimhand%27s_Barcrawl">Alfred Grimhand's Barcrawl</a></li>
+                <li data-id="playthrough_10_11">Buy 4 beers from the same bar</li>
+                <li data-id="playthrough_10_12">Do the <a href="https://oldschool.runescape.wiki/w/Natural_history_quiz">Natural History Quiz</a> for 9 Hunter <img src="img/icons/hunter.png"> and Slayer <img src="img/icons/slayer.png"></li>
+                <li data-id="playthrough_10_13">Steal tea from the tea stall</li>
+                <li data-id="playthrough_10_14">Give the package from the <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rune_Mysteries">Rune Mysteries</a> <img src="img/icons/quest.png"> quest to Aubury in the rune shop South of Varrock East Bank, speak to him again for the notes</li>
+                <li data-id="playthrough_10_15">Buy 100 fire runes, 300 earth and water runes, 4000 mind runes, and 8000 air runes</li>
+                <li data-id="playthrough_10_16">Withdraw the following from the bank<br>GP<br>Barcrawl card<br>Bucket of Milk<br>Seasoned sardine<br>Axe</li>
+                <li data-id="playthrough_10_17">Walk to the pub North-East of Varrock</li>
+                <li data-id="playthrough_10_18">Get a drink for <a href="https://oldschool.runescape.wiki/w/Alfred_Grimhand%27s_Barcrawl">Alfred Grimhand's Barcrawl</a></li>
+                <li data-id="playthrough_10_19"><img src="img/icons/diary.png"> Cut a dying tree at the sawmill and make 1 regular plank for diary tasks <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_10_20">Continue <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Gertrude%27s_Cat">Gertrude's Cat</a> <img src="img/icons/quest.png"> at the lumberyard</li>
+                <li data-id="playthrough_10_21">Walk over to the Varrock East bank</li>
+                <li data-id="playthrough_10_22">Withdraw a pickaxe and the Chronicle from your bank</li>
+                <li data-id="playthrough_10_23">Fill 1 inventory of buckets with water and bank them</li>
+                <li data-id="playthrough_10_24"><a href="https://i.imgur.com/zS8PIZi.png">Pick Cadava berries and 16 Red berries</a></li>
+                <li data-id="playthrough_10_25">Mine <img src="img/icons/mining.png"> 4 copper ore and 1 iron ore</li>
+                <li data-id="playthrough_10_26">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Gertrude%27s_Cat">Gertrude's Cat</a> <img src="img/icons/quest.png">, raise the cat with the sardines you bought</li>
+                <li data-id="playthrough_10_27">Talk to Juliet</li>
+                <li data-id="playthrough_10_28">Walk to the Varrock West bank</li>
+                <li data-id="playthrough_10_29">Withdraw from bank<br>GP<br>Runes<br>Barcrawl card<br>Cakes<br>Staff of Fire (Equip)</li>
+                <li data-id="playthrough_10_30">Walk to Edgeville</li>
+              </ul>
+
+            <h3 id="Draynor3"><a href="#Draynor3_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/6">Draynor, Port Sarim, Falador, and Rimmington 2</a> <span id="playthrough_totals_11"></span></h3> 
+              <ul id="Draynor3_col" class="collapse in">
+                <li data-id="playthrough_11_1">Start <a href="https://oldschool.runescape.wiki/w/Enter_the_Abyss">Enter the Abyss</a> by talking to the Zamorak Mage in the Wilderness</li>
+                <li data-id="playthrough_11_2">Start heading towards Falador</li>
+                <li data-id="playthrough_11_3">Buy a bronze med helm from Barbarian Village</li>
+                <li data-id="playthrough_11_4">Pick up 1 cooked meat from the table and burn it on the fire in the bar</li>
+                <li data-id="playthrough_11_5">Safespot barbarians in the bar for 13 Magic <img src="img/icons/mage.png"> (or skip this and get 13 Magic <img src="img/icons/mage.png"> during <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Witch%27s_House">Witch's House</a> <img src="img/icons/quest.png">)</li>
+                <li data-id="playthrough_11_6">Use the trees to safespot a bear for it's meat South of the mind altar</li>
+                <li data-id="playthrough_11_7">Head to Falador, get a drink from the Falador bar for <a href="https://oldschool.runescape.wiki/w/Alfred_Grimhand%27s_Barcrawl">Alfred Grimhand's Barcrawl</a></li>
+                <li data-id="playthrough_11_8">Buy 5 Wizard Mind Bombs from the bar</li>
+                <li data-id="playthrough_11_9">Buy 8 woad leaves, offer 20gp to get 2 leaves</li>
+                <li data-id="playthrough_11_10">Head to the bank</li>
+                <li data-id="playthrough_11_11">Withdraw the following items: <br>GP<br>Cheese<br>Runes<br>All 4 meats for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Druidic_Ritual">Druidic Ritual</a> <img src="img/icons/quest.png"> <br>18 Cakes<br>Gloves (Equip)</li>
+                <li data-id="playthrough_11_12">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Witch%27s_House">Witch's House</a> <img src="img/icons/quest.png"> (Tank first 2 phases on North side of the shed, run to the safespot when you need to eat.)</li>
+                <li data-id="playthrough_11_13">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Druidic_Ritual">Druidic Ritual</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_11_14">Buy 1 PACK of eyes of newt and a pestle and mortar in Taverley</li>
+                <li data-id="playthrough_11_15">Withdraw the following items: <br>GP<br>Pickaxe<br>Burnt meat<br>Eye of newt<br>2 Iron bars<br>Bucket of water<br>Pie dish<br>10 cakes<br>2 Teleport to House tablets<br>1 Falador Teleport Tablet</li>
+                <li data-id="playthrough_11_16">Use your house tab to get to Rimmington</li>
+                <li data-id="playthrough_11_17">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Witch%27s_Potion">Witch's Potion</a> <img src="img/icons/quest.png">, the onion is just north of the town</li>
+                <li data-id="playthrough_11_18">Run to Port Sarim and make a redberry pie (flour and redberries are avaialble at the Port Sarim food shop)</li>
+                <li data-id="playthrough_11_19">Get a security book from the <a href="https://oldschool.runescape.wiki/w/Security_Guard">Security Guard</a> upstairs in the Port Sarim Jail for a diary task</li>
+                <li data-id="playthrough_11_20">Give the redberry pie to Thurgo, and ask about <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Knight%27s_Sword">The Knight's Sword</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_11_21"><img src="img/icons/diary.png"> Go down into the dungeon and mine 2 blurite ore, 1 is for a Falador diary task <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_11_22">Home teleport and run to Al-Kharid</li>
+              </ul>
+
+            <h3 id="Desert1"><a href="#Desert1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/7">Al-Kharid and Port Khazard</a> <span id="playthrough_totals_12"></span></h3> 
+              <ul id="Desert1_col" class="collapse in">
+                <li data-id="playthrough_12_1">Buy 50 thread, 3 needles, and all of the moulds from the crafting shop</li>
+                <li data-id="playthrough_12_2">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Prince_Ali_Rescue">Prince Ali Rescue</a> <img src="img/icons/quest.png"> and talk to Osman</li>
+                <li data-id="playthrough_12_3"><img src="img/icons/diary.png"> Fish anchovies (using a small fishing net) south of the Al-Kharid bank for a diary task <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_12_4">Buy 1 inventory of bronze bars for questing from the shop at Shantay Pass</li>
+                <li data-id="playthrough_12_5">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Tourist_Trap">The Tourist Trap</a> <img src="img/icons/quest.png">, during the quest it is recommended to use <a href="https://www.youtube.com/watch?v=VFxB4zWqrd8">this safespot</a>. Put BOTH XP rewards on Agility <img src="img/icons/agil.png"></li>
+                <li data-id="playthrough_12_6"><img src="img/icons/minigame.png"> Minigame teleport to the Fishing Trawler <img src="img/icons/minigame.png"></li>
+                <li data-id="playthrough_12_7">Cook <img src="img/icons/cook.png"> all the low level raw food you got from Wintertodt to get 15 Cooking <img src="img/icons/cook.png"> at the fire</li>
+                <li data-id="playthrough_12_8">Buy 10 buckets of slime</li>
+                <li data-id="playthrough_12_9">Buy 10 flour from general store</li>
+              </ul>
+
+            <h3 id="Grind2"><a href="#Grind2_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/7">The Second Grind: Grind Harder</a> <span id="playthrough_totals_13"></span></h3> 
+              <ul id="Grind2_col" class="collapse in">
+                <li data-id="playthrough_13_1">Buy 600 buckets of sand and 600 soda ash, these will be used later for Crafting <img src="img/icons/craft.png"></li>
+              </ul>
+
+            <h3 id="Arganoog3"><a href="#Arganoog3_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/8">Fighting, Gnomes, Waterfalls, and Arganoog</a> <span id="playthrough_totals_14"></span></h3> 
+              <ul id="Arganoog3_col" class="collapse in">
+                <li data-id="playthrough_14_1">Mine <img src="img/icons/mining.png"> 15 clay south of Port Khazard</li>
+                <li data-id="playthrough_14_2">Withdraw the following items: <br>Runes for fire strike<br>Barcrawl card<br>Cakes<br>Axe</li>
+                <li data-id="playthrough_14_3">Fire strike imps West of the Tower of Life for all 4 beads (<img src="img/icons/diary.png"> pickup a mind talisman for a Falador diary task if you get one <img src="img/icons/diary.png">)</li>
+                <li data-id="playthrough_14_4">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Fight_Arena">Fight Arena</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_14_5">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Tree_Gnome_Village">Tree Gnome Village</a> <img src="img/icons/quest.png">, grab Glarial's pebble on the way for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Waterfall_Quest">Waterfall Quest</a> <img src="img/icons/quest.png"> (<a href="https://www.youtube.com/watch?v=DqcZEqz3X28">Safespot</a> the Khazard Warlord)</li>
+                <li data-id="playthrough_14_6">Use the Spirit Tree and go to the Battlefield teleport</li>
+                <li data-id="playthrough_14_7">Run to the ZMI bank and safespot Zamorak Warriors until you get a Rune Scazmatar (optional really, but it's not too rare and you need the XP anyways)</li>
+                <li data-id="playthrough_14_8">Get a drink from the Arganoog bar for the barcrawl</li>
+                <li data-id="playthrough_14_9">Buy 4 compost packs from the Arganoog farming shop</li>
+                <li data-id="playthrough_14_10">Train 42 Magic <img src="img/icons/mage.png"> at Moss Giants near the Fishing Guild (bury the bones)</li>
+                <li data-id="playthrough_14_11">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Hazeel_Cult">Hazeel Cult</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_14_12">Get a drink for the barcrawl from the Brimhaven bar</li>
+                <li data-id="playthrough_14_13">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Tribal_Totem">Tribal Totem</a> <img src="img/icons/quest.png">, buy some swordfish and kawambams from the food shop for some more difficult quests later</li>
+                <li data-id="playthrough_14_14">Withdraw the following items: <br>Glarial's Pebble<br>Notes for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dwarf_Cannon">Dwarf Cannon</a> <img src="img/icons/quest.png"> <br>Ammo mould<br>Rope<br>6 Air/Water/Earth runes<br>Cakes</li>
+                <li data-id="playthrough_14_15">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dwarf_Cannon">Dwarf Cannon</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_14_16">Drop your runes outside Glarial's tomb, get amulet and the urn</li>
+                <li data-id="playthrough_14_17">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Waterfall_Quest">Waterfall Quest</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_14_18"><img src="img/icons/minigame.png">Minigame tele to the Fishing Trawler <img src="img/icons/minigame.png"></li>
+                <li data-id="playthrough_14_19">Withdraw the following items: <br>GP<br>Hammer</li>
+                <li data-id="playthrough_14_20">Charter to Port Sarim</li>
+              </ul>
+
+            <h3 id="Lumbridge3"><a href="#Lumbridge3_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/8">Lumbridge 3 and a Lil' More Zeah</a> <span id="playthrough_totals_15"></span></h3> 
+              <ul id="Lumbridge3_col" class="collapse in">
+                <li data-id="playthrough_15_1">Head to Zeah and get 15% Hosidius favor using 100 Compost and 100 Saltpetre</li>
+                <li data-id="playthrough_15_2">Train Thieving <img src="img/icons/thieving.png"> to level 42 at the fruit stall in a house East of the Hosidius marketplace, NOT at the marketplace. (bank strange fruits for energy restore during quests)</li>
+                <li data-id="playthrough_15_3">Home teleport to Lumbridge</li>
+                <li data-id="playthrough_15_4">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Cook%27s_Assistant">Cook's Assistant</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_15_5">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Recipe_for_Disaster">Recipe for Disaster</a> <img src="img/icons/quest.png">, watch the cutscene to unlock the bank chest in the basement</li>
+                <li data-id="playthrough_15_6">Make 5 soft clay</li>
+                <li data-id="playthrough_15_7">Buy 7 buckets of milk</li>
+                <li data-id="playthrough_15_8">Withdraw the following items: <br>20 Balls of wool<br>8 cakes</li>
+                <li data-id="playthrough_15_9">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Sheep_Shearer">Sheep Shearer</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_15_10">Pickpocket <img src="img/icons/thieving.png"> HAM members until you get a rusty sword (keep any robe pieces, opals, and buttons if you get any)</li>
+                <li data-id="playthrough_15_11">Pick up 12 onions at Fred's farm</li>
+                <li data-id="playthrough_15_12">Head over to Aggie in Draynor</li>
+              </ul>
+
+            <h3 id="Draynor4"><a href="#Draynor4_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/9">Draynor 4 and Varrock 2</a> <span id="playthrough_totals_16"></span></h3> 
+              <ul id="Draynor4_col" class="collapse in">
+                <li data-id="playthrough_16_1">Have Aggie make you 4 Red dyes, 4 Blue dyes, and 5 Yellow dyes (if you use the item on her it skips dialogue)</li>
+                <li data-id="playthrough_16_2">Withdraw the following items: <br>Soft clay<br>3 Balls of wool<br>Ashes<br>Pot of Flour<br>Bucket of water<br>Yellow dye<br>Redberries</li>
+                <li data-id="playthrough_16_3">Get the key imprint, wig, and skin paste necessary for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Prince_Ali_Rescue">Prince Ali Rescue</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_16_4"><img src="img/icons/diary.png"> Do 1 lap of the Draynor Rooftop Agility course for a diary task <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_16_5">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Vampyre_Slayer">Vampyre Slayer</a> <img src="img/icons/quest.png">, grab 3 garlic from the cupboard upstairs</li>
+                <li data-id="playthrough_16_6">Buy birdhouse seeds from Olivia, get as many as you want for now, hop worlds if necessary</li>
+                <li data-id="playthrough_16_7">Buy 20 teleports for your Chronicle</li>
+                <li data-id="playthrough_16_8">Withdraw the following items: <br>Staff of Fire (equip)<br>Chronicle (equip)<br>Runes for fire strikes<br>Notes for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rune_Mysteries">Rune Mysteries</a> <img src="img/icons/quest.png"><br>4 beads<br>20 bones (you can kill goblins South of Draynor jail for these)</li>
+                <li data-id="playthrough_16_9">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Imp_Catcher">Imp Catcher</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_16_10">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rune_Mysteries">Rune Mysteries</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_16_11"><img src="img/icons/diary.png"> Teleport to the essence mines for a diary task <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_16_12">Get the Ghost's skull in the basement</li>
+                <li data-id="playthrough_16_13">Kill 5 chickens/wizards, hand over the 25 bones for the key needed in <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Demon_Slayer">Demon Slayer</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_16_14">Use your Chronicle teleport</li>
+                <li data-id="playthrough_16_15">Withdraw the following items: <br>GP<br>Cadava berries<br>Juliet's Letter (the item name is just 'message')</li>
+                <li data-id="playthrough_16_16">Now in Varrock, continue <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Romeo_%26_Juliet">Romeo & Juliet</a> <img src="img/icons/quest.png">, get the cadava potion</li>
+                <li data-id="playthrough_16_17">Buy an iron chainbody from Horvik</li>
+                <li data-id="playthrough_16_18">Continue <a href="https://oldschool.runescape.wiki/w/Enter_the_Abyss">Enter the Abyss</a>, grab the scrying orb, visit the essence mines</li>
+                <li data-id="playthrough_16_19">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Demon_Slayer">Demon Slayer</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_16_20">Get the stake for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Vampyre_Slayer">Vampyre Slayer</a> <img src="img/icons/quest.png"> from the Blue Moon Inn</li>
+                <li data-id="playthrough_16_21">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Romeo_%26_Juliet">Romeo & Juliet</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_16_22">Use the Spirit Tree to go to Gnome Stronghold</li>
+              </ul>
+
+            <h3 id="Gnome2"><a href="#Gnome2_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/9">Gnomes and Karamja</a> <span id="playthrough_totals_17"></span></h3> 
+              <ul id="Gnome2_col" class="collapse in">
+                <li data-id="playthrough_17_1">Use Brimstail to go to essence mines (make sure you still have the scrying orb on you)</li>
+                <li data-id="playthrough_17_2">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Grand_Tree">The Grand Tree</a> <img src="img/icons/quest.png">, do up until you have the bark sample and notes</li>
+                <li data-id="playthrough_17_3">Withdraw the following items: <br>GP<br>Chronicle<br>Bark sample<br>Translation notes<br>Barcrawl card<br>Small fishing net<br>Runes for fire strike</li>
+                <li data-id="playthrough_17_4"><img src="img/icons/minigame.png"> Clan Wars minigame teleport, recharge energy and then go to Castle Wars <img src="img/icons/minigame.png"></li>
+                <li data-id="playthrough_17_5">Get a drink for the barcrawl from the Yanille pub</li>
+                <li data-id="playthrough_17_6">Buy 2 bird snares, 2 butterfly jars, and a butterfly net from the hunter shop</li>
+                <li data-id="playthrough_17_7">Go to Hazelmere and continue <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Grand_Tree">The Grand Tree</a> <img src="img/icons/quest.png"> until you are at the Karamja shipyard</li>
+                <li data-id="playthrough_17_8">From the Karamja shipyard, charter to Karamja, Musa Point</li>
+                <li data-id="playthrough_17_9">Take a boat to Port Sarim</li>
+                <li data-id="playthrough_17_10">Get a drink from the Port Sarim bar for barcrawl</li>
+                <li data-id="playthrough_17_11">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Pirate%27s_Treasure">Pirate's Treasure</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_17_12">Fish some shrimp North of banana tree for a diary task</li>
+                <li data-id="playthrough_17_13">Do Karamja and Port Sarim parts of the <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Pirate%27s_Treasure">Pirate's Treasure</a> <img src="img/icons/quest.png"> quest</li>
+                <li data-id="playthrough_17_14">Use your Chronicle teleport</li>
+                <li data-id="playthrough_17_15">Get pirate's message from Blue Moon Inn (you can drop it AFTER reading it)</li>
+                <li data-id="playthrough_17_16">Spirit Tree teleport to Gnome Stronghold</li>
+                <li data-id="playthrough_17_17">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Grand_Tree">The Grand Tree</a> <img src="img/icons/quest.png"> (you should get 43 Magic <img src="img/icons/mage.png">, if not then fire strike some gnome guards)</li>
+                <li data-id="playthrough_17_18">Buy a premade blurb' sp, 4 vodka, pineapple chunks</li>
+                <li data-id="playthrough_17_19">Equip Gas mask</li>
+                <li data-id="playthrough_17_20">Spirit Tree teleport to Arganoog</li>
+              </ul>
+
+            <h3 id="Arganoog4"><a href="#Arganoog4_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/10">Arganoog 4 and Camelot/Seers 1</a> <span id="playthrough_totals_18"></span></h3> 
+              <ul id="Arganoog4_col" class="collapse in">
+                <li data-id="playthrough_18_1">Withdraw the following items: <br>GP<br>Scrying orb<br>Pickaxe<br>Runes for fire strike<br>1 Wizard Mind Bomb<br>1 Law rune<br>Some food</li>
+                <li data-id="playthrough_18_2">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Biohazard">Biohazard</a> <img src="img/icons/quest.png">, get the plague sample and 3 potions</li>
+                <li data-id="playthrough_18_3">Take the boat from the Arganoog docks to Rimmington</li>
+                <li data-id="playthrough_18_4">Get the touch paper from the chemist and give the 3 potions to the guys outisde, then take the boat back to Arganoog</li>
+                <li data-id="playthrough_18_5">Visit the Arganoog essence mines, your scrying orb should be 3/3 now. If you didn't bank any breads when getting 25 Thieving <img src="img/icons/thieving.png">, then buy 15 now from the cake stall owner. Mine <img src="img/icons/mining.png"> 2 iron ore East of Arganoog if you never got any from Wintertodt.</li>
+                <li data-id="playthrough_18_6">Drink the Wizard Mind Bomb and then Camelot teleport</li>
+                <li data-id="playthrough_18_7">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Merlin%27s_Crystal">Merlin's Crystal</a> <img src="img/icons/quest.png">, talk to Gawain and Lancelot</li>
+                <li data-id="playthrough_18_8">In Catherby, buy a candle, 2 fishing rods, and a lobster pot</li>
+                <li data-id="playthrough_18_9">Buy 15 pineapples from charters, put the pineapples into the compost bin</li>
+                <li data-id="playthrough_18_10">Buy 1 pack of normal compost and all farming tools, store everything in the Tool Leprechaun</li>
+                <li data-id="playthrough_18_11">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Fishing_Contest">Fishing Contest</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_18_12">Kill Mordred and get bat bones/black candle for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Merlin%27s_Crystal">Merlin's Crystal</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_18_13"><img src="img/icons/diary.png"> Talk to Sherlock and pick 5 flax for diary tasks <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_18_14">Withdraw the following items: <br>GP<br>Barcrawl card<br>Pot<br>Spade<br>Fishing rod<br>Fishing pass<br>Garlic</li>
+                <li data-id="playthrough_18_15">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Murder_Mystery">Murder Mystery</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_18_16">Get a drink from the bar in Seers for the barcrawl</li>
+                <li data-id="playthrough_18_17">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Fishing_Contest">Fishing Contest</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_18_18">Withdraw the following items: <br>6 Clay<br>4 Copper<br>2 Iron<br>5 Buckets of sand<br>5 Soda ash<br>Spade<br>Runes for fire strike</li>
+                <li data-id="playthrough_18_19">Head to Taverley</li>
+              </ul>
+
+            <h3 id="Draynor5"><a href="#Draynor5_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/11">Falador, Port Sarim, and Varrock</a> <span id="playthrough_totals_19"></span></h3> 
+              <ul id="Draynor5_col" class="collapse in">
+                <li data-id="playthrough_19_1">Speak to the Lady of the Lake in Taverley</li>
+                <li data-id="playthrough_19_2">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Doric%27s_Quest">Doric's Quest</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_19_3">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Pirate%27s_Treasure">Pirate's Treasure</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_19_4">Make 5 molten glass</li>
+                <li data-id="playthrough_19_5">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Black_Knights%27_Fortress">Black Knight's Fortress</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_19_6">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Recruitment_Drive">Recruitment Drive</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_19_7">Withdraw the following items: <br>GP<br>1 Bread</li>
+                <li data-id="playthrough_19_8">Run South to Port Sarim</li>
+                <li data-id="playthrough_19_9"><img src="img/icons/diary.png"> Trade Sarah to access Sarah's Farming Shop for a Falador diary task <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_19_10">Buy a black wizards hat from Betty at Port Sarim magic store</li>
+                <li data-id="playthrough_19_11">At the Port Sarim jewellery store, give the bread to the beggar to receive the Excalibur</li>
+                <li data-id="playthrough_19_12"><img src="img/icons/minigame.png"> Minigame teleport to Clan Wars, recharge your energy and go to Castle Wars <img src="img/icons/minigame.png"></li>
+                <li data-id="playthrough_19_13">Withdraw the following items: <br>GP<br>3 Planks<br>Bronze bar<br>Molten glass<br>Ghost's Skull<br>Runes<br>Some food<br>10 Empty slots for antipoisons</li>
+                <li data-id="playthrough_19_14">Near the Observatory, pickup Super Antipoison (1)'s until you hit the login limit, make sure to decant them.</li>
+                <li data-id="playthrough_19_15">Complete the <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Observatory_Quest">Observatory Quest</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_19_16">Home teleport to Lumbridge</li>
+                <li data-id="playthrough_19_17">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Restless_Ghost">The Restless Ghost</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_19_18">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Lost_Tribe">The Lost Tribe</a> <img src="img/icons/quest.png">, do up until you need to go to Varrock</li>
+                <li data-id="playthrough_19_19">Withdraw the following items: <br>Brooch<br>Scrying orb<br>GP</li>
+                <li data-id="playthrough_19_20">Teleport to Varrock, continue <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Lost_Tribe">The Lost Tribe</a> <img src="img/icons/quest.png"> until you need to go to the Goblin Village</li>
+                <li data-id="playthrough_19_21">Buy priest robes (keep these after the quest), boots, and gloves</li>
+                <li data-id="playthrough_19_22">Finish <a href="https://oldschool.runescape.wiki/w/Enter_the_Abyss">Enter the Abyss</a></li>
+                <li data-id="playthrough_19_23">Get the magic words for Merlin's crystal at the altar in South-East Varrock</li>
+                <li data-id="playthrough_19_24">Continue <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Biohazard">Biohazard</a> <img src="img/icons/quest.png"> in Varrock</li>
+                <li data-id="playthrough_19_25">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Dig_Site">The Dig Site</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_19_26">Use your Chronicle teleport and start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dragon_Slayer_I">Dragon Slayer I</a> <img src="img/icons/quest.png"> at the Champion's Guild</li>
+                <li data-id="playthrough_19_27">Use the Grand Exchange Spirit Tree to teleport to Battlefield of Khazard</li>
+              </ul>
+
+            <h3 id="Arganoog5"><a href="#Arganoog5_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/11">Arganoog 5, Karamja 2, Camelot/Seers 2, and Falador 4</a> <span id="playthrough_totals_20"></span></h3> 
+              <ul id="Arganoog5_col" class="collapse in">
+                <li data-id="playthrough_20_1">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Biohazard">Biohazard</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_20_2"><img src="img/icons/diary.png"> Finish off Arganoog easy tasks and go claim your cloak(s). (Use the XP lamp on Agility <img src="img/icons/agil.png">, not worth holding on to and we won't be 30 Herblore <img src="img/icons/herb.png"> for a while.) <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_20_3">Trade your grown cat for 200 death runes, use your Chronicle teleport to go buy a new kitten, then cloak teleport back to Arganoog</li>
+                <li data-id="playthrough_20_4">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Jungle_Potion">Jungle Potion</a> <img src="img/icons/quest.png">, bring a small fishing net with you and fish ~100 kawambanji to feed your kittens, be cautious of aggressive NPCs in the area</li>
+                <li data-id="playthrough_20_5">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Shilo_Village">Shilo Village</a> <img src="img/icons/quest.png"> (highly recommend buying a few kawambams and swordfish from the Brimhaven food store beforehand)</li>
+                <li data-id="playthrough_20_6">Withdraw the following items: <br>Pickaxe<br>Hammer<br>Lit candle<br>Excalibur<br>Bat bones<br>Black candle<br>Tinderbox<br>Knife<br>Needle<br>Thread<br>4 Coal</li>
+                <li data-id="playthrough_20_7">Teleport to Camelot</li>
+                <li data-id="playthrough_20_8">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Merlin%27s_Crystal">Merlin's Crystal</a> <img src="img/icons/quest.png"> , then start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Holy_Grail">Holy Grail</a> <img src="img/icons/quest.png"> and talk to Merlin</li>
+                <li data-id="playthrough_20_9">Grab some Boots of Lightness</li>
+                <li data-id="playthrough_20_10">Play the organ in the Seers Village church for a diary task</li>
+                <li data-id="playthrough_20_11">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Elemental_Workshop_I">Elemental Workshop I</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_20_12">Buy 1 inventory of stew from the Seers bar</li>
+                <li data-id="playthrough_20_13">Withdraw the following items: <br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Lost_Tribe">The Lost Tribe</a> <img src="img/icons/quest.png"> brooch and book<br>Blue/orange dyes</li>
+                <li data-id="playthrough_20_14">Teleport to Falador</li>
+                <li data-id="playthrough_20_15">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Goblin_Diplomacy">Goblin Diplomacy</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_20_16">Continue <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Lost_Tribe">The Lost Tribe</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_20_17">Home teleport to Lumbridge</li>
+                <li data-id="playthrough_20_18">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Lost_Tribe">The Lost Tribe</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_20_19">Withdraw the following items: <br>GP<br>5 Silver ore<br>Sickle mould<br>Holy mould<br>Key imprint<br>Bronze bar</li>
+                <li data-id="playthrough_20_20">Go through the gate to Al-Kharid</li>
+              </ul>
+
+            <h3 id="Desert2"><a href="#Desert2_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/12">Desert 2 and Karamja 2</a> <span id="playthrough_totals_21"></span></h3> 
+              <ul id="Desert2_col" class="collapse in">
+                <li data-id="playthrough_21_1">In the desert, start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Feud">The Feud</a> <img src="img/icons/quest.png"> at Ali Morrisane</li>
+                <li data-id="playthrough_21_2">From Ali Morrisane, buy the desert disguise for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Feud">The Feud</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_21_3">Smelt the 5 silver, make a sickle and unstrung holy symbol, keep 3 bars</li>
+                <li data-id="playthrough_21_4">Give the key imprint and bronze bar to Osman for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Prince_Ali_Rescue">Prince Ali Rescue</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_21_5">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Feud">The Feud</a> <img src="img/icons/quest.png"> (if you're scared of mage bank, unlock the rune shop after you finish the quest)</li>
+                <li data-id="playthrough_21_6">Blackjack until 50 Theiving <img src="img/icons/thieving.png">, you can buy wines from the bar to use as food (if you'd like to 3-tick fish, home teleport to Lumbridge and pick up 15+ swamp tar now)</li>
+                <li data-id="playthrough_21_7">Arganoog cloak tele and take the boat from Arganoog to Brimhaven</li>
+                <li data-id="playthrough_21_8">Take the cart to Shilo Village</li>
+                <li data-id="playthrough_21_9">Cut uncut gems until level 32 Crafting <img src="img/icons/craft.png"></li>
+                <li data-id="playthrough_21_10">Buy 15k feathers from Shilo Village fishing shop</li>
+                <li data-id="playthrough_21_11">Get 58 Fishing <img src="img/icons/fish.png"> with trout and salmon (bank the fish for Cooking <img src="img/icons/cook.png"> XP, you can grow cats pretty easily while doing this since you can just feed it the fish, recommended ~10 cats for death runes)</li>
+                <li data-id="playthrough_21_12"><img src="img/icons/minigame.png"> Minigame teleport to Burthrope Games' room <img src="img/icons/minigame.png"></li>
+                <li data-id="playthrough_21_13">Cook <img src="img/icons/cook.png"> all of your trout, do not cook <img src="img/icons/cook.png"> the salmon yet</li>
+                <li data-id="playthrough_21_14"><img src="img/icons/minigame.png"> Minigame teleport to Barbarian Assault <img src="img/icons/minigame.png"></li>
+              </ul>
+
+            <h3 id="Grind3"><a href="#Grind3_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/13">The Third Grind: Return of the Grind</a> <span id="playthrough_totals_22"></span></h3> 
+              <ul id="Grind3_col" class="collapse in">
+                <li data-id="playthrough_22_1">Get 50 Agility <img src="img/icons/agil.png"> from Barbarian Fishing <img src="img/icons/fish.png">, you should end up at 74 Fishing <img src="img/icons/fish.png"> (you can feed caviar and roe to kitten, bring a knife to cut the fish)</li>
+                <li data-id="playthrough_22_2">After 50 Agility <img src="img/icons/fish.png"> , <img src="img/icons/minigame.png"> minigame teleport to Burthrope <img src="img/icons/minigame.png"></li>
+                <li data-id="playthrough_22_3">Do Rogue's Den minigame for full Rogue set (cook <img src="img/icons/cook.png"> salmon to regen run energy after every time you finish an attempt, buy 50 lockpicks before leaving)</li>
+                <li data-id="playthrough_22_4">Equip your newly aquired Rogue's set and go back to Blackjacking <img src="img/icons/thieving.png"> until you have 2.4m GP (around 83 Thieving <img src="img/icons/thieving.png">) (alternatively, you can do LMS and sell rune arrows as long as you get 75 Thieving <img src="img/icons/thieving.png"> before doing so)</li>
+              </ul>
+
+            <h3 id="Desert3"><a href="#Desert3_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/13">Desert 3, Camelot/Seers 3, and Falador 5</a> <span id="playthrough_totals_23"></span></h3> 
+              <ul id="Desert3_col" class="collapse in">
+                <li data-id="playthrough_23_1">Take a carpet ride back to Shantay pass</li>
+                <li data-id="playthrough_23_2">Withdraw the following items: <br>Teleport runes<br>Axe<br>Pickaxe<br>Bird snare and all items necessary for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Golem">The Golem</a> <img src="img/icons/quest.png"> (if you have any extra cosmic runes, you can make 1-2 dueling rings to speed up the next 2 quests)</li>
+                <li data-id="playthrough_23_3">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Golem">The Golem</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_23_4">When visiting the digsite, start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Elemental_Workshop_II">Elemental Workshop II</a> <img src="img/icons/quest.png"> by reading the book, keep the 2 items in the bank</li>
+                <li data-id="playthrough_23_5">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Golem">The Golem</a> <img src="img/icons/quest.png"> , get the gems with a chisel and a hammer (<img src="img/icons/diary.png"> while in Uzer, cut a teak tree, mine 5 clay, and catch a golden warbler bird near the desert phoenix for diary tasks during the quest <img src="img/icons/diary.png">)</li>
+                <li data-id="playthrough_23_6">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Shadow_of_the_Storm">Shadow of the Storm</a> <img src="img/icons/quest.png"> (you should have the priest gown and black wizard hat in your bank already to use as black items) (Notes: You can flinch the demon using <a href="https://i.imgur.com/kvn6Mf5.png">this safespot</a> with your rune scazmatar, just last-hit him with darklight. An attack potion is recommended as it speeds up the fight a little bit. Use the 10K XP reward on RANGED.)</li>
+                <li data-id="playthrough_23_7">Go to Edgeville and talk to Oziach to <s>enable good rng for drops</s> continue <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dragon_Slayer_I">Dragon Slayer I</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_23_8">Head to the Mage bank and buy 6k nature runes, all of the cosmics you can, and 10 law runes on each world until you have 300 (for a safer route, you can buy all of your runes from Ali Morrisane if you don't wanna risk Mage bank, although the runes are more expensive)</li>
+                <li data-id="playthrough_23_9">Teleport to Falador and get 2 buckets of sap from <a href="http://i.imgur.com/YoH5z70.png">this tree</a> near Falador East bank</li>
+                <li data-id="playthrough_23_10">Buy both adamant and rune pickaxes from the pickaxe shop in the mines</li>
+                <li data-id="playthrough_23_11">Head over to Varrock</li>
+              </ul>
+
+            <h3 id="Grind4"><a href="#Grind4_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/13">The Fourth Grind: The Grind Strikes Back</a> <span id="playthrough_totals_24"></span></h3> 
+              <ul id="Grind4_col" class="collapse in">
+                <li data-id="playthrough_24_1"><img src="img/icons/diary.png"> Start out by completing the Varrock Easy Achievement Diary for the armor, it makes the next part a bit faster (you can get the kudos by talking to Minas on the 2nd floor, use the lamps on Herblore <img src="img/icons/herb.png">, use the diary lamp on Agility <img src="img/icons/agil.png">) <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_24_2">Mine <img src="img/icons/mining.png"> 2300 iron ore at the Arganoog monastery, Superheat <img src="img/icons/mage.png"> the ores while walking to the Arganoog bank, then teleport back using the Arganoog cloak (3 tick does make this faster if you'd like, do all the clues you can, don't smith the bars yet) </li>
+              </ul>
+
+            <h3 id="Varrock2"><a href="#Varrock2_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/14">Varrock 4, Morytania 1, Lumbridge 4, and Draynor 5</a> <span id="playthrough_totals_25"></span></h3> 
+              <ul id="Varrock2_col" class="collapse in">
+                <li data-id="playthrough_25_1">Buy a bronze sword from the Varrock sword shop (required for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Horror_from_the_Deep">Horror from the Deep</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_25_2">Smith 3 bronze wire</li>
+                <li data-id="playthrough_25_3">Buy an oak longbow and a regular shortbow from Lowe</li>
+                <li data-id="playthrough_25_4">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Priest_in_Peril">Priest in Peril</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_25_5">Buy 400 steel nails at the sawmill (if every world is bought out it's not a big deal)</li>
+                <li data-id="playthrough_25_6">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I">Rag and Bone Man I</a> <img src="img/icons/quest.png"> on the way to the Paterdomus Temple</li>
+                <li data-id="playthrough_25_7">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Priest_in_Peril">Priest in Peril</a> <img src="img/icons/quest.png"> and <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Nature_Spirit">Nature Spirit</a> <img src="img/icons/quest.png"> (<img src="img/icons/diary.png"> restore prayer at the grotto after the quest for a diary task <img src="img/icons/diary.png">)</li>
+                <li data-id="playthrough_25_8">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Creature_of_Fenkenstrain">Creature of Fenkenstrain</a> <img src="img/icons/quest.png"> , use the Port Phasmatys furnace, you should have some slime banked, use it to get 5 Ecto-tokens</li>
+                <li data-id="playthrough_25_9">Withdraw the following items: <br>Teleport runes<br>GP<br>Rune scazmatar</li>
+                <li data-id="playthrough_25_10">Use your Chronicle teleport</li>
+                <li data-id="playthrough_25_11">Head into the Champion's guild and continue <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dragon_Slayer_I">Dragon Slayer I</a> <img src="img/icons/quest.png">, make sure to ask every question. While there, buy a coif, green dhide chaps and vambraces</li>
+                <li data-id="playthrough_25_12">Kill the nearby ram, bear, and unicorn for the bones for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I">Rag and Bone Man I</a> <img src="img/icons/quest.png">, Camelot teleport after</li>
+                <li data-id="playthrough_25_13">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Elemental_Workshop_II">Elemental Workshop II</a> <img src="img/icons/quest.png">, after the quest, <img src="img/icons/diary.png"> kill one of each elemental for a diary task <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_25_14">Home teleport to Lumbridge and grab an anti-dragon shield from the duke</li>
+                <li data-id="playthrough_25_15">Withdraw the following items: <br>Axe<br>Rope<br>Lit candle<br>Hammer<br>Stake (<img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Vampyre_Slayer">Vampyre Slayer</a> <img src="img/icons/quest.png">)<br>Spade</li>
+                <li data-id="playthrough_25_16">Kill a goblin for the goblin bone, kill a big frog for the big frog leg (in the Lumbridge caves), and a giant rat for a giant rat bone all for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I">Rag and Bone Man I</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_25_17">Begin <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Lost_City">Lost City</a> <img src="img/icons/quest.png">, then head to Draynor Manor</li>
+                <li data-id="playthrough_25_18">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Ernest_the_Chicken">Ernest the Chicken</a> <img src="img/icons/quest.png"> and <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Vampyre_Slayer">Vampyre Slayer</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_25_19">Dig up the skull for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains">Fairytale I - Growing Pains</a> <img src="img/icons/quest.png"> while you're in the area to save some time later</li>
+                <li data-id="playthrough_25_20">Bank at Draynor</li>
+                <li data-id="playthrough_25_21">Withdraw the following items: <br>Runes for fire strike<br>Food</li>
+                <li data-id="playthrough_25_22">Head to Entrana and talk to the high priest for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Holy_Grail">Holy Grail</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_25_23">Get at least 5 Dramen branches, make 2 staves, then finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Lost_City">Lost City</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_25_24">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains">Fairytale I - Growing Pains</a> <img src="img/icons/quest.png"> (if you require a nature talisman, go to the abyss and kill leeches, make sure you trap them so only 1 can attack you) </li>
+                <li data-id="playthrough_25_25">Flinch Tanglefoot in <a href="https://i.imgur.com/2Ejgx0h.png">this spot</a>, then finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains">Fairytale I - Growing Pains</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_25_26">Talk to Martin to start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen">Fairytale II - Cure a Queen</a> <img src="img/icons/quest.png"> (we will continue on while waiting for the crops to grow for Martin)</li>
+                <li data-id="playthrough_25_27">Buy 35 jugs of vinegar for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I">Rag and Bone Man I</a> <img src="img/icons/quest.png">, then buy 1 marigold seed, 3 cabbage seeds, and 3 onion seeds from the Draynor seed market</li>
+                <li data-id="playthrough_25_28">Rescue Prince Ali from the Draynor Jail</li>
+                <li data-id="playthrough_25_29">Start the Evil Dave subquest for RFD (if you don't have a cat, start raising one now)</li>
+                <li data-id="playthrough_25_30">Kill 2 cows and make 1 soft and 1 hard leather</li>
+                <li data-id="playthrough_25_31">Smelt <img src="img/icons/smith.png"> 1 inventory of gold (should have the ore from Wintertodt, if you didn't, mine some in Al-Kharid)</li>
+                <li data-id="playthrough_25_32">Craft <img src="img/icons/craft.png"> 1 Ring of Recoil, 10 Games Necklaces, and the rest into Rings of Dueling, from this point forward use the Clan Wars teleport as your energy recharge before teleporting to a new location</li>
+                <li data-id="playthrough_25_33">Speak to Martin for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen">Fairytale II - Cure a Queen</a> <img src="img/icons/quest.png">, then head to Zanaris and unlock fairy rings</li>
+                <li data-id="playthrough_25_34"><img src="img/icons/diary.png"> Travel to the following fairy rings to complete diary tasks: <img src="img/icons/diary.png"><br>BIS<br>AIR<br>ALS<br>CIR<br>DIS</li>
+              </ul>
+
+            <h3 id="Draynor6"><a href="#Draynor6_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/15">Dragon Slayer Dave</a> <span id="playthrough_totals_26"></span></h3> 
+              <ul id="Draynor6_col" class="collapse in">
+                <li data-id="playthrough_26_1">Withdraw the following items: (Most of this category is just <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dragon_Slayer_I">Dragon Slayer I</a> <img src="img/icons/quest.png"> )<br>GP<br>Maze key<br>90 steel nails<br>3 Planks<br>Hammer<br>Food<br>Runes</li>
+                <li data-id="playthrough_26_2">Teleport to House, complete Melzar's maze </li>
+                <li data-id="playthrough_26_3">Walk to the Port Sarim jail and use Telekinetic Grab to get the 2nd map piece</li>
+                <li data-id="playthrough_26_4">Buy and repair the ship, then teleport to Falador</li>
+                <li data-id="playthrough_26_5">Withdraw the following items: <br>GP<br>Runes<br>Soft clay<br>Wizard Mind Bomb<br>Lobster pot<br>Silk</li>
+                <li data-id="playthrough_26_6">Equip your anti-dragon shield and Ring of Recoil now so that you don't forget it later</li>
+                <li data-id="playthrough_26_7">Make an unfired bowl in the Barbarian Village</li>
+                <li data-id="playthrough_26_8">Speak to the Oracle, then go grab the 3rd map piece</li>
+                <li data-id="playthrough_26_9">Teleport to Lumbridge, run to Draynor and convince Ned to be your ship's captain</li>
+                <li data-id="playthrough_26_10">Head to Crandor and open the shortcut to the Karamja volcano (bring swordfish/kawambams as your food) (as soon as you climb down on Crandor, climb back up for a diary task)</li>
+                <li data-id="playthrough_26_11">Kill Elvarg, you can attempt this as many times as necessary. You could flinch, but you shouldn't have trouble at this point. Step under Elvarg when you eat.</li>
+                <li data-id="playthrough_26_12">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dragon_Slayer_I">Dragon Slayer I</a> <img src="img/icons/quest.png"> and buy a green d'hide body from Oziach</li>
+                <li data-id="playthrough_26_13">Wear some gloves and pick up 5 nettles at the yews</li>
+                <li data-id="playthrough_26_14">Make the stew for Evil Dave while in Edgeville (if your cat isn't grown yet, you can leave it for later)</li>
+                <li data-id="playthrough_26_15">Teleport to Lumbridge</li>
+                <li data-id="playthrough_26_16">Fill a bowl with water, put the nettls in it, and use it on a range (this is used later for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Ghosts_Ahoy">Ghosts Ahoy</a> <img src="img/icons/quest.png"> )</li>
+                <li data-id="playthrough_26_17">Finish the Evil Dave subquest</li>
+              </ul>
+
+            <h3 id="Lumbridge4"><a href="#Lumbridge4_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/16">Ranged, Slayer, and Some Quests</a> <span id="playthrough_totals_27"></span></h3> 
+              <ul id="Lumbridge4_col" class="collapse in">
+                <li data-id="playthrough_27_1">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Death_to_the_Dorgeshuun">Death to the Dorgeshuun</a> <img src="img/icons/quest.png"> (while getting HAM robes, keep buttons if you didn't get them earlier)</li>
+                <li data-id="playthrough_27_2">Buy a Dorgeshuun crossbow and 4000 bone bolts, buy a bullseye lantern (empty) from Miltog at the market in Dorgeshkaan</li>
+                <li data-id="playthrough_27_3">Use swamp tar on the lamp while still next to Miltog, use your empty lantern on the still to fill it</li>
+                <li data-id="playthrough_27_4">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Holy_Grail">Holy Grail</a> <img src="img/icons/quest.png"> <img src="img/icons/diary.png"> (get a cup of tea from Galahad, cross the log, mine coal at the coal trucks for Kandarin diary tasks) (for Karamja diary tasks, rope swing to moss giant island and mine gold a the horse shoe mine) <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_27_5">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Horror_from_the_Deep">Horror From the Deep</a> <img src="img/icons/quest.png"> (just Mage <img src="img/icons/mage.png"> the Mother Dagannoth, hide when it switches to melee and range, turn run off, recommended to bring swordfish and kawambams here)</li>
+                <li data-id="playthrough_27_6"><img src="img/icons/diary.png"> Complete a lap at the Barbarian Agility Course for a diary task <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_27_7">Do Turael Slayer <img src="img/icons/slayer.png"> tasks with the dorgeshuun crossbow until you have 37 Ranged <img src="img/icons/range.png"> and 18 Slayer <img src="img/icons/slayer.png"> (every 10th task should be done with the highest level slayer master available, prioritize killing monsters for tasks with higher HP)</li>
+                <li data-id="playthrough_27_8">Kill tree spirits with fire strike for a mithril axe AND either another mithril axe, adamant axe, or a rune axe (whichever comes first)</li>
+                <li data-id="playthrough_27_9">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Animal_Magnetism">Animal Magnetism</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_27_10">Buy a mithril paltebody from Horvik in Varrock, buy some mitril platelegs in Al-Kharid</li>
+                <li data-id="playthrough_27_11">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Spirits_of_the_Elid">Spirits of the Elid</a> <img src="img/icons/quest.png"> (you can use the armor for tanking, or flinch them)</li>
+                <li data-id="playthrough_27_12">Complete <s>suicide</s> <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Underground_Pass">Underground Pass</a> <img src="img/icons/quest.png">. It is recommended you use the mithril armor for this quest. NOTE: You can trap the paladins behind each other the same way as the captain from <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Tourist_Trap">The Tourist Trap</a> <img src="img/icons/quest.png">. As for the spider, you can stand between the 2 skeletons on the East wall and mage the big one with earth blast, if the little ones attack you, just run a bit North and back to the same spot. Here is a video of <a href="https://www.youtube.com/watch?v=WI2SYhpwIh8">how to complete the quest without overhead prayers</a> (we don't have those yet).</li>
+                <li data-id="playthrough_27_13">Upgrade your Iban's Staff</li>
+                <li data-id="playthrough_27_14">Get 50 Attack <img src="img/icons/atk.png"> doing more Turael Slayer <img src="img/icons/slayer.png">, keep in mind your 10th tasks. Sand crabs are an alternative here to obtain 50 Attack <img src="img/icons/atk.png">.</li>
+                <li data-id="playthrough_27_15">Make an Amulet of Magic</li>
+                <li data-id="playthrough_27_16">Kill blue dragons with Iban's blast for 43 Prayer <img src="img/icons/pray.png"> (Don't bank hides, calculate how many bones you need for 43 Prayer <img src="img/icons/pray.png"> at the Ectofuntus then subtract 2400, plus 1 extra bone for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Watchtower">Watchtower</a> <img src="img/icons/quest.png"> later. Wilderness Altar is an available alternative to Ectofuntus later if you prefer that.)</li>
+                <li data-id="playthrough_27_17"><img src="img/icons/minigame.png"> Minigame teleport to the Fishing Trawler <img src="img/icons/minigame.png">, buy however many buckets of slime you need to match the amount of bones you collected</li>
+                <li data-id="playthrough_27_18">Equip your Ghostspeak amulet</li>
+                <li data-id="playthrough_27_19">If you didn't make the nettle water earlier, you will need to do that now.</li>
+                <li data-id="playthrough_27_20">Make sure you have all the items required for <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Ghosts_Ahoy">Ghosts Ahoy</a> <img src="img/icons/quest.png"><br>GP<br>9 Dragon Bones<br>9 Pots (the general store sells pots if you need them)<br>9 Buckets of Slime</li>
+                <li data-id="playthrough_27_21">Charter to Port Phastmatys</li>
+              </ul>
+
+            <h3 id="Grind5"><a href="#Grind5_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/16">The Fifth Grind: A Good Day to Grind Hard</a> <span id="playthrough_totals_28"></span></h3> 
+              <ul id="Grind5_col" class="collapse in">
+                <li data-id="playthrough_28_1">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Ghosts_Ahoy">Ghosts Ahoy</a> <img src="img/icons/quest.png">, then grind 9 Dragon bones and offer them, don't forget to claim your Ecto-tokens</li>
+                <li data-id="playthrough_28_2">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Ghosts_Ahoy">Ghosts Ahoy</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_28_3">Grind the rest of your bones to get your Prayer level up to 43 <img src="img/icons/pray.png"> (or head to the Wilderness Altar if you prefer that)</li>
+                <li data-id="playthrough_28_4">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Monkey_Madness_I">Monkey Madness I</a> <img src="img/icons/quest.png">, use your reward on Attack <img src="img/icons/atk.png"> and Defense <img src="img/icons/def.png"></li>
+                <li data-id="playthrough_28_5">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Wanted!">Wanted!</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_28_6">Level your Slayer <img src="img/icons/slayer.png"> up to 40 using Turael (don't forget, every 10th task from Vannaka (or Chaeldar if you're 70 Combat, Konar if you're 75 Combat), Prayer flicking is recommended, but not mandatory, train your Ranged <img src="img/icons/range.png"> to 40, then train Attack <img src="img/icons/atk.png">)</li>
+                <li data-id="playthrough_28_7">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Shades_of_Mort%27ton">Shades of Mort'ton</a> <img src="img/icons/quest.png">. If there's no one else to help (I'd recommend just @'ing the boys in Discord), but this can be left until later if you used the museum lamps on Herblore <img src="img/icons/herb.png"> earlier. Take the book you get to the Apothecary in Varrock for some free Herblore <img src="img/icons/herb.png"> XP </li>
+                <li data-id="playthrough_28_8">Get 25 Herblore <img src="img/icons/herb.png"> (if you don't already have it)</li>
+                <li data-id="playthrough_28_9">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Heroes%27_Quest">Heroes Quest</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_28_10">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Fremennik_Trials">The Fremennik Trials</a> <img src="img/icons/quest.png"></li>
+              </ul>
+
+            <h3 id="Lumbridge5"><a href="#Lumbridge5_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/17">Watch the Throne</a> <span id="playthrough_totals_29"></span></h3> 
+              <ul id="Lumbridge5_col" class="collapse in">
+                <li data-id="playthrough_29_1">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Throne_of_Miscellania">Throne of Miscellania</a> <img src="img/icons/quest.png"> and <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Royal_Trouble">Royal Trouble</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_29_2">Put at least 750k GP into the Kingdom coffer, set your gathering to 10 maples and 5 herbs (we'll only be using Kingdom for 7 days to start, make sure you go back to get 100% favor every day for max yield)</li>
+                <li data-id="playthrough_29_3">Grab your Rogue outfit and go back to Blackjacking <img src="img/icons/thieving.png"> for a few hours to put more money into your Kingdom so that it doesn't drop below 750k. (In total you need about 525k on top of the 750k to get all you need from the Kingdom for now)</li>
+                <li data-id="playthrough_29_4">Clean finds at the museum until you've found all 5 of the Kudos items AND the ruby necklace (we turn this into a Digsite Pendant later)</li>
+                <li data-id="playthrough_29_5">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Bone_Voyage">Bone Voyage</a> <img src="img/icons/quest.png">, then setup your first bird houses. Alkan has a great guide for birdhouse runs <a href="https://youtu.be/Tf02JEqkUcA">here</a> if you need one. Make sure you do birdhouse runs every 50 minutes from your last trip. After your first Hunter <img src="img/icons/hunter.png"> levels from birdhouse runs, Runecrafting <img src="img/icons/rc.png"> should now be your lowest skill.</li>
+                <li data-id="playthrough_29_6">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Tears_of_Guthix">Tears of Guthix</a> <img src="img/icons/quest.png"> quest, make sure you do the minigame weekly for your free XP (again, Runecrafting <img src="img/icons/rc.png"> should be your lowest skill when you do Tears for a long time)</li>
+                <li data-id="playthrough_29_7">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Giant_Dwarf">The Giant Dwarf</a> <img src="img/icons/quest.png"> to unlock Keldragrim</li>
+                <li data-id="playthrough_29_8">Buy 2 inventories of gold ore from the shop at the Blast Furnace, then head to the Edgeville furnace and make a lot of digsite pendants</li>
+                <li data-id="playthrough_29_9">Make molten glass and cut gems until you get to 45 Crafting <img src="img/icons/craft.png"> (if you made all of the molten glass you can start making fishbowls too) (45 is required for maple birdhouses when you get 44 Hunter <img src="img/icons/hunter.png">)</li>
+                <li data-id="playthrough_29_10">Go buy more seeds from Olivia at Draynor for birdhouses if necessary (later on the seed shop at the Farming Guild is better, so don't spend too long buying seeds, probably only get like 1-2k for now)</li>
+                <li data-id="playthrough_29_11">Move your house to Pollnivneach so you can do a birdhouse run every 50 minutes and quickly return to Blackjacking <img src="img/icons/thieving.png"> (<img src="img/icons/diary.png"> entering your POH from Pollnivneach portal is a diary task <img src="img/icons/diary.png">)</li>
+                <li data-id="playthrough_29_12">Get 88 Thieving <img src="img/icons/thieving.png"> with blackjacking, this should net you about 1.4m GP</li>
+                <li data-id="playthrough_29_13">After the 7th day of Kingdom, remove all your GP. (This should net you about 6.2k maple logs)</li>
+              </ul>
+
+            <h3 id="Zeah1"><a href="#Zeah1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/17">Supplies! More Quests!</a> <span id="playthrough_totals_30"></span></h3> 
+              <ul id="Zeah1_col" class="collapse in">
+                <li data-id="playthrough_30_1">Pickpocket Master Farmers for a couple of hours to get a good amount of lower level seeds so you can start Farming <img src="img/icons/farm.png">, we mainly want harralanders (don't forget your rogue gear)</li>
+                <li data-id="playthrough_30_2">Get 100% Hosidius favour, you should have 300 compost in the bank (after you get 45%, do mess hall until 100%)</li>
+                <li data-id="playthrough_30_3">Buy pineapples for supercompost from the shops at charter ships</li>
+                <li data-id="playthrough_30_4">Put 15 pineapples into each of the compost bins at the allotment patches, rmemeber to close the bin so it can begin composting (don't do the Hosidius patch just yet)</li>
+                <li data-id="playthrough_30_5">Buy ~200 chocolate from the Grand Tree food shop, we can buy more later a lot quicker from the RFD chest</li>
+                <li data-id="playthrough_30_6">Make some energy pots, you should have some harralander herbs from Kingdom if it's been over a day since you did the quest</li>
+                <li data-id="playthrough_30_7">Teleport to Camelot, plant barley seeds at the hops patch North-West of Seers, pay the farmer 3 normal copost to look after them</li>
+                <li data-id="playthrough_30_8"><img src="img/icons/minigame.png"> Minigame teleport to the blast furnace <img src="img/icons/minigame.png"></li>
+                <li data-id="playthrough_30_9">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Giant_Dwarf">The Giant Dwarf</a> <img src="img/icons/quest.png">. If you need more gems, the stall in Keldagrim is usually stocked. While waiting for the next 2 quests to progress, Smith <img src="img/icons/smith.png"> iron dart tips.</li>
+                <li data-id="playthrough_30_10">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Forgettable_Tale...">Forgettable Tale...</a> <img src="img/icons/quest.png">. There's an anvil near the bank in Keldagrim. Your barley will be ready when you need it, use it on a range to obtain the barley malt needed. <img src="img/icons/diary.png"> Plant Jute seeds after harvesting the barley for a diary task, you do not need to compost or protect them. <img src="img/icons/diary.png"> DO NOT waste the 2 Dwarven Stout(m)s you get as a reward.</li>
+                <li data-id="playthrough_30_11">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Garden_of_Tranquillity">Garden of Tranquillity</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_30_12">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Enlightened_Journey">Enlightened Journey</a> <img src="img/icons/quest.png">, you will need 6 willow branches for the Falador diary on top of the 12 needed for the quest so make sure you get those too. While waiting for the trees to grow, continue on.</li>
+                <li data-id="playthrough_30_13">Complate <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Eyes_of_Glouphrie">The Eyes of Glouphrie</a> <img src="img/icons/quest.png"> and <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Tower_of_Life">Tower of Life</a> <img src="img/icons/quest.png">. <img src="img/icons/diary.png"> Bring a raw chicken and a raw swordfish to kill a Swordchick for the Arganoog diary after completing Tower of Life. <img src="img/icons/diary.png"></li>
+                <li data-id="playthrough_30_14">Finish smithing <img src="img/icons/smith.png"> the rest of your iron dart tips, leave 20 bars in your bank for quests</li>
+                <li data-id="playthrough_30_15">Mine <img src="img/icons/mining.png"> Volcanic ash for ultracompost, get like 2k so you don't have to come back and mine more</li>
+                <li data-id="playthrough_30_16">Do a farm run <img src="img/icons/farm.png"> of limpwurts, harralanders, and ultracompost. Store 15 supercompost in the Tool Leprechaun for a quest, make the rest into ultracompost (use the ash on the full bin, not individual buckets)</li>
+                <li data-id="playthrough_30_17">Do farm runs <img src="img/icons/farm.png"> whenever you can after this point. Remember to use ultra on herbs, but for the limpwurts just use normal compost.</li>
+                <li data-id="playthrough_30_18">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Temple_of_Ikov">Temple of Ikov</a> <img src="img/icons/quest.png">. From this point on start Fletching <img src="img/icons/fletch.png"> the iron darts while you run around doing quests. If you haven't gotten a yew bow from medium clues, a yew longbow can be obtained from young implings in Puro-Puro)</li>
+                <li data-id="playthrough_30_19">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Enlightened_Journey">Enlightened Journey</a> <img src="img/icons/quest.png"> and unlock the Varrock and Castle Wars balloons (if you didn't get yew logs from Wintertodt, you'll just have to run between Varrock bank and the sawmill)</li>
+              </ul>
+
+            <h3 id="Grind6"><a href="#Grind6_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/18">The Sixth Grind: Saw-Con</a> <span id="playthrough_totals_31"></span></h3> 
+              <ul id="Grind6_col" class="collapse in">
+                <li data-id="playthrough_31_1">Make 10+ Ring of Dueling</li>
+                <li data-id="playthrough_31_2">Equip whichever axe you got from the tree spirits earlier</li>
+                <li data-id="playthrough_31_3">Start out at Castle Wars, cut 65 willow logs <img src="img/icons/wc.png"> and deposit them into the Balloon Tranportation log storage</li>
+                <li data-id="playthrough_31_4">Balloon travel to Varrock, cut a full inventory of oak logs <img src="img/icons/wc.png"> and then turn them into planks at the sawmill (there are 3 oak trees next to the balloon)</li>
+                <li data-id="playthrough_31_5">Teleport to Castle Wars, repeat this until you have 50 Construction <img src="img/icons/cons.png"> banked. You will need about 1500 planks (not including Wintertodt XP), check an XP calculator for the exact amount.</li>
+                <li data-id="playthrough_31_6">Withdraw all of your planks noted, un-note using Phials at the Rimmington general store</li>
+                <li data-id="playthrough_31_7">For level 22-33 <img src="img/icons/cons.png">, make oak dining tables in the dining room</li>
+                <li data-id="playthrough_31_8">For level 33-50 <img src="img/icons/cons.png">, make oak larders in the kitchen</li>
+                <li data-id="playthrough_31_9">After finishing, move your house to Kourend for the farm patch, complete daily tree runs from now on with the seeds oyu get from birdhouses and Farming contracts later as well.</li>
+              </ul>
+
+            <h3 id="Quest1"><a href="#Quest1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/19">Quest-ching</a> <span id="playthrough_totals_32"></span></h3> 
+              <ul id="Quest1_col" class="collapse in">
+                <li data-id="playthrough_32_1">Complete all of these quests while fletching your iron dart tips that you made into iron darts</li>
+                <li data-id="playthrough_32_2"><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Big_Chompy_Bird_Hunting">Big Chompy Bird Hunting</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_32_3"><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I">Rag and Bone Man I</a> <img src="img/icons/quest.png"> (only the first part, you should have all the bones in your bank already)</li>
+                <li data-id="playthrough_32_4"><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Family_Crest">Family Crest</a> <img src="img/icons/quest.png"> , grab goldsmith gauntlets after the quest is done</li>
+                <li data-id="playthrough_32_5">Start <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Legends%27_Quest">Legends' Quest</a> <img src="img/icons/quest.png">, do up until you get the vanilla pod (we need this for RFD)</li>
+                <li data-id="playthrough_32_6"><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Death_Plateau">Death Plateau</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_32_7"><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Troll_Stronghold">Troll Stronghold</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_32_8">If you haven't finished Fletching <img src="img/icons/fletch.png"> by now, finish them while underwater</li>
+                <li data-id="playthrough_32_9">Head to the small island on Fossil Island (the one with the bank)</li>
+                <li data-id="playthrough_32_10">Fletch <img src="img/icons/fletch.png"> maple shortbows (u) until 55 Fletching <img src="img/icons/fletch.png"> (if you finished darts)</li>
+                <li data-id="playthrough_32_11">Pick seaweed spores that spawn (they spawn north of the anchor so make sure you're checking the minimap)</li>
+                <li data-id="playthrough_32_12">Plant seaweed after you get your first 2 spores</li>
+                <li data-id="playthrough_32_13">You will probably get a weight wearning, but you can disregard that as it doesn't matter unless you go into the deep water</li>
+                <li data-id="playthrough_32_14">Fletch <img src="img/icons/fletch.png"> all of your maple logs into maple longbows (u) after you finish the darts and shortbows (u) (leave some maple logs for birdhouses)</li>
+                <li data-id="playthrough_32_15">Cut all your uncut gems <img src="img/icons/craft.png">, if you have any molten glass left, blow all of it into unpowered orbs, make 2 lantern lenses as well <img src="img/icons/craft.png"></li>
+                <li data-id="playthrough_32_16">Do seaweed farming <img src="img/icons/farm.png"> every time you do a birdhouse run from now on, very important as we will be needing this seaweed</li>
+              </ul>
+
+            <h3 id="Grind7"><a href="#Grind7_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/19">The Seventh Grind: Brace For a Golden Age</a> <span id="playthrough_totals_33"></span></h3> 
+              <ul id="Grind7_col" class="collapse in">
+                <li data-id="playthrough_33_1">Buy 2800 gold ore from the Blast Furnace ore shop, 1 inventory per world (do NOT use energy pots for this or the smithing <img src="img/icons/smith.png"> part, only run with empty inventory)</li>
+                <li data-id="playthrough_33_2">Level up your Smithing <img src="img/icons/smith.png"> to level 60, DO NOT FORGET to wear your goldsmith gauntlets</li>
+                <li data-id="playthrough_33_3">Head to Edgeville and Craft <img src="img/icons/craft.png"> all of your gold bars into gold BRACELETS, leave around 30 bars for teleport jewellery if you need to make any more (you can buy rubies from Keldagrim or Kourend Castle gem stalls if you run out)</li>
+                <li data-id="playthrough_33_4">Head to Mage Bank, if you have 60 Magic <img src="img/icons/mage.png">, get a Mage Arena cape while you're here</li>
+                <li data-id="playthrough_33_5">Buy another 5k nature runes, get some cosmics too if you need to (if you don't want to go to Mage Arena, you can boost to get into the Wizard Guild after you get 63 Magic <img src="img/icons/mage.png"> alching later)</li>
+                <li data-id="playthrough_33_6">Do Agility <img src="img/icons/agil.png"> until you have 260 marks for full Graceful, 50-60 Agility <img src="img/icons/agil.png"> at Canifis, 60+ Agility <img src="img/icons/agil.png">at Seers</li>
+                <li data-id="playthrough_33_7">High Alch <img src="img/icons/mage.png"> your gold bracelets and maple bows (u) while doing the laps</li>
+                <li data-id="playthrough_33_8">If you run out of alchs, loot your Kingdom and fletch <img src="img/icons/fletch.png"> more longbows to alch (keep ~500 maples for birdhouses)</li>
+                <li data-id="playthrough_33_9">If you want a break from Agility <img src="img/icons/agil.png">, Fish <img src="img/icons/fish.png"> 3k raw kawambams, bank at Zanaris</li>
+                <li data-id="playthrough_33_10">By the time you're done with Agility <img src="img/icons/agil.png">, you should have 70+ Magic <img src="img/icons/mage.png">. At this point if you still have GP in your Kingdom after the 7th day, withdraw all of it, you should also have 6.2k maples.</li>
+              </ul>
+
+            <h3 id="Quest2"><a href="#Quest2_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/19">Sir Quest-A-Lot</a> <span id="playthrough_totals_34"></span></h3> 
+              <ul id="Quest2_col" class="collapse in">
+                <li data-id="playthrough_34_1">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Regicide">Regicide</a> <img src="img/icons/quest.png">, pick up a few whiteberries just north of the elf tracker while you're here.</li>
+                <li data-id="playthrough_34_2">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Hand_in_the_Sand">The Hand in the Sand</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_34_3">Do all of the <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Recipe_for_Disaster">Recipe for Disaster</a> <img src="img/icons/quest.png"> subquests (if you didn't fish the 3k kawambams earlier for Cooking XP, you can leave Awowogei's quest until later.</li>
+                <li data-id="playthrough_34_4">Buy a bunch of chocolate dust from the chest and make energy potions with them</li>
+                <li data-id="playthrough_34_5">Plant some Toadflax seeds, an agility potion is needed soon for a quest (if you don't have a seed for some reason, you can do Brimhaven Agility Arena and get 2 toadflax from there)</li>
+                <li data-id="playthrough_34_6">Make a mithril graple</li>
+                <li data-id="playthrough_34_7">Complete the following quests: <br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/A_Soul%27s_Bane">A Soul's Bane</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Another_Slice_of_H.A.M.">Another Slice of H.A.M.</a><img src="img/icons/quest.png"> <br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Icthlarin%27s_Little_Helper">Icthlarin's Little Helper</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/In_Search_of_the_Myreque">In Search of the Myreque</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/In_Aid_of_the_Myreque">In Aid of the Myreque</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Eagles%27_Peak">Eagles' Peak</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Enakhra%27s_Lament">Enakhra's Lament</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_34_8">Also these: <br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Ratcatchers">Ratcatchers</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Olaf%27s_Quest">Olaf's Quest</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Between_a_Rock...">Between a Rock...</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Tai_Bwo_Wannai_Trio">Tai Bwo Wannai Trio</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Zogre_Flesh_Eaters">Zogre Flesh Eaters</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_34_9">...and these: <br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Rum_Deal">Rum Deal</a> <img src="img/icons/quest.png"> (You will need 42 slayer, you should be close to it already. Grab a task from <s>Machinima</s>Mazchna for the Morytania diary if you haven't already. As for the 47 Prayer requirement, you can use the Anicent Mace to boost)<br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Cabin_Fever">Cabin Fever</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/One_Small_Favour">One <s>Small</s> Favour</a> <img src="img/icons/quest.png"><br><img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Watchtower">Watchtower</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_34_10"><img src="img/icons/diary.png"> Complete all Easy and Medium diaries <img src="img/icons/diary.png"><br>Kourend can be left alone for now, I wouldn't do them until you have a Xeric's Talisman and Staminas. <br>Wilderness and Femennik Mediums require a higher Slayer level, you can leave those for when you go back to doing Slayer<br>You probably don't have a crystal key yet for the Falador Medium diary, so leave that for now <br>If you're not 70 Combat for intermediate boat Pest Control, go ahead and do Slayer now, train your Attack to 60, then Defence until 70 Combat <br>Stay at PC for 250 points to get void bottoms (they're good Magic defence) you'll need 55 range eventually anyways for red chins.</li>
+                <li data-id="playthrough_34_11">Do Slayer <img src="img/icons/slayer.png"> until you have 60 Attack <img src="img/icons/atk.png">, then go buy a Dragon Scazamatar</li>
+                <li data-id="playthrough_34_12">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Eadgar%27s_Ruse">Eadgar's Ruse</a> <img src="img/icons/quest.png"> and <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/My_Arm%27s_Big_Adventure">My Arm's Big Adventure</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_34_13">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Desert_Treasure">Desert Tresure</a> <img src="img/icons/quest.png"> (if you didn't get any magic lgos from Wintertodt, go catch nature implings in Puro-Puro, you should have 58 Hunter <img src="img/icons/hunter.png"> from birdhouses</li>
+                <li data-id="playthrough_34_14">Finish <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Recipe_for_Disaster">Recipe for Disaster</a><img src="img/icons/quest.png"> , go buy some Barrows Gloves afterwards</li>
+              </ul>
+
+            <h3 id="Goals1"><a href="#Goals1_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://nightleaf.org/guide/page/20">Further Goals</a> <span id="playthrough_totals_35"></span></h3> 
+              <ul id="Goals1_col" class="collapse in">
+                <li data-id="playthrough_35_1">Get auto-weed from Tithe Farm (if 54 Farming)</li>
+                <li data-id="playthrough_35_2">Start doing Farming contracts as soon as you can do medium contracs. You can use Garden Pies to get medium contracts at 62 Farming, and hards at 82. Pies can be bought from the Cooking Guild</li>
+                <li data-id="playthrough_35_3">If you ever need something AFK(ish) to do, just head over to ammonite crabs with either your bone crossbow (if you want to catch less chins later), or melee them to speed up your Slayer.</li>
+                <li data-id="playthrough_35_4">Level up your Crafting to 61</li>
+                <li data-id="playthrough_35_5">Equip a rune pickaxe, Varrock armor 2, camulet, and full Graceful (minus the body, of course)</li>
+                <li data-id="playthrough_35_6">Grab 1200 empty buckets, 60k GP, 6 waterskins, and a knife + teak log if you want to 3-tick. Head to the desert quarry and mine sandstone for 1.2k Buckets of sand. (Walk from the rocks to the grinder to maintain run energy if you're 3-ticking)</li>
+                <li data-id="playthrough_35_7">Go to the Rogue's Den and burn giant seaweed on the first, 4 seaweed at a time. Make molten glass at the Edgeville furnace</li>
+                <li data-id="playthrough_35_8">Blow the molten glass into glass lenses, if you do it underwater you get more seaweed spores</li>
+                <li data-id="playthrough_35_9">Get 70 Mining and complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Lunar_Diplomacy">Lunar Diplomacy</a><img src="img/icons/quest.png"> . It is recommended to fill the sandstone grinder with 25k buckets worth of sand so taht you have it ready for later. Bring 8 waterskins with you and drop them as they empty for more inventory space and make sure you do your birdhouses.</li>
+                <li data-id="playthrough_35_10">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/The_Fremennik_Isles">The Fremennik Isles</a> <img src="img/icons/quest.png"> and collect your Helm of Neitiznot</li>
+                <li data-id="playthrough_35_11">Do Barbarian Assault for your Fighter Torso</li>
+                <li data-id="playthrough_35_12">Train Slayer until 65 Attack and 65 Strength, if you don't already have them (strength amulet is as good as a glory for melee slayer, so just stick to that for now)</li>
+                <li data-id="playthrough_35_13">Obtain a dragon defender from the Warrior's Guild</li>
+                <li data-id="playthrough_35_14">Train your slayer to 58, make sure you keep doing farm/birdhouse runs (prioritize Strength training during Slayer, aiming for 65/80/65 melees and then train each skill 5 levels before switching to the next)</li>
+                <li data-id="playthrough_35_15">Turael point boosting should be done here until around 150 tasks, every 10th at Konar so you can farm points and sort out your blocklist before actually doing Slayer. All else fails, do Slayer however you would like.</li>
+                <li data-id="playthrough_35_16">If you get any hard clues, make sure to do them. Hard clues are decent gp/hr at this point in the account. Make sure to train your rafting too for the blue dhide steps (if you get one) using superglass make Lunar spell.</li>
+                <li data-id="playthrough_35_17">Prioritize your slayer points on: </li>
+                  <ol type = "1">
+                    <li>Superior Slayer</li>
+                    <li>Block list</li>
+                    <li>Extending your favorite tasks</li>
+                    <li>Slayer ring crafting</li>
+                    <li>Slayer helm</li>
+                    <li>Gargoyle smasher</li>
+                  </ol>
+                <li data-id="playthrough_35_18">Once you reach 58 Slayer, <s>set up a tent and</s> camp Cave Horrors for a Black Mask</li>
+                <li data-id="playthrough_35_19">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Making_Friends_with_My_Arm">Making Friends with My Arm</a> <img src="img/icons/quest.png"> and make both of the basalt portals in your POH (do this around 65/80/65, the boss can be annoying if done any lower)</li>
+                <li data-id="playthrough_35_20">Complete the <a href="https://oldschool.runescape.wiki/w/Fremennik_Diary#Hard">Fermennik Hard Diary</a></li>
+                <li data-id="playthrough_35_21">Level your Agility up to 70</li>
+                <li data-id="playthrough_35_22">Make a few Agility potions to use the shortcut to speed up your herb runs even more</li>
+                <li data-id="playthrough_35_23">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dream_Mentor">Dream Mentor</a> <img src="img/icons/quest.png"> and imbue your Black Mask/Slayer Helm</li>
+                <li data-id="playthrough_35_24">Get the required Crafting level for Slayer Rings (at some point)</li>
+                <li data-id="playthrough_35_25">Keep doing Slayer until level 75</li>
+                <li data-id="playthrough_35_26">Complete <a href="https://oldschool.runescape.wiki/w/The_Mage_Arena_II">Mage Arena II</a></li>
+                <li data-id="playthrough_35_27">Get 77 Herblore, you should have it already banked by now if you've been doing your farm runs, if not, keep doing Slayer (you can finish quests that give you Harblore XP or lamps, some hard diaries can also be done at this point)</li>
+                <li data-id="playthrough_35_28">Get 70 Agility if you didn't get it earlier for the herb patch shortcut earlier</li>
+                <li data-id="playthrough_35_29">Cut and bank 2.2k teak logs at Fossil Island, from the Farming patch teaks</li>
+                <li data-id="playthrough_35_30">Do Mahogany Homes with teak planks until 70 Construction</li>
+                <li data-id="playthrough_35_31">Finish 70 Woodcutting, get 60 Range with the bone crossbow at Pest Control (if you don't already have 60), and then get 70 Smithing (if you can't afford to do it all with gold, you can buy ~2k coal and 2k iron to make steel platebodies, otherwise do more slayer until you can afford to do 70 Smithing with gold only)</li>
+                <li data-id="playthrough_35_32">Make botanical pies and +4 Herblroe boost to make Saradomin Brews</li>
+                <li data-id="playthrough_35_33">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Song_of_the_Elves">Song of the Elves</a> <img src="img/icons/quest.png">, if you don't have 80 Magic yet for blitz, you could go do Mage Training Arena for Bones to Peaches, Master Wand, and Infinity Boots. Use blood blitz against Seren, with a full inventory of brews and restores it's practically impossible to fail.</li>
+                <li data-id="playthrough_35_34">Hunt 15k red chinchompas at the Prifddinas hunter area</li>
+                <li data-id="playthrough_35_35">Get range Void from Pest Control</li>
+                <li data-id="playthrough_35_36">Unlock the <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Monkey_Madness_II">Monkey Madness II</a> <img src="img/icons/quest.png"> chinning area and chin to at least 87 Ranged</li>
+                <li data-id="playthrough_35_37">At 70 Ranged, if you're 100+ Combat do Western Hard diary and upgrade to Elite Void</li>
+                <li data-id="playthrough_35_38">Complete <img src="img/icons/quest.png"> <a href="https://oldschool.runescape.wiki/w/Dragon_Slayer_II">Dragon Slayer II</a> <img src="img/icons/quest.png"></li>
+                <li data-id="playthrough_35_39">Start using Kingdom again now that you'll be getting constant GP easily, put 10 on teaks or mahogany, whichever you prefer to use for Construction, and then 5 on herbs</li>
+                <li data-id="playthrough_35_40">Next best thing to do is camp Corrupted Gauntlet until you have 2 enhanced weapon seeds to make both weapons and 6 armor seeds for full crystal</li>
+                </ul>
+            </div>
+            <h1>Fin.</h1>
+          </div>
+          <div class="tab-pane" id="tabHiscores">
+            <h2>Account Hi-Scores</h2>
+              <h4>Currently a WIP</h4>
+          </div>
+          
+          <div class="tab-pane" id="tabRuneLite">
+            <h3>What is RuneLite?</h3>
+            <p>RuneLite is a commonly used 3rd Party Client that is loaded with plugins that optimize and change the way you play! The only official website for RuneLite is found <a href="https://runelite.net/">here</a>. Anywhere else is considered malware and dangerous.</p>
+
+            <h3>Well that sounds illegal, will I get banned?</h3>
+            <p><a href="https://secure.runescape.com/m=news/another-message-about-unofficial-clients?oldschool=1">No.</a> As long as you are not using any illegal plugins, you will be just fine.</p>
+
+            <h3>What plugins should I use?</h3>
+            <p>While I really think everyone should play around with all the different plugins that RuneLite comes loaded with (not including Plugin Hub), the bare minimum I would recommend are found here: <a href="https://pastebin.com/dBhZJsM5">Default Plugins</a></p>
+
+            <h3>What's a Plugin Hub?</h3>
+            <p>RuneLite has a third-party respository (that is tested and proven 'safe' by the developers of RuneLite) that includes a ton of plugins made by the community.</p>
+
+            <h3>That sounds awesome, what plugins do you recommend using from Plugin Hub then?</h3>
+            <p>Remember that all of these plugins are 'use at your own risk' (they could break your game), so your mileage may vary. The ones I recommend can be found here: <a href="https://pastebin.com/QG2MZTQs">Plugin Hub Plugins</a></p>
+
+          </div>
+
+          <div class="tab-pane" id="tabFAQ">      
+            <h2>FAQ</h2>
+
+              <p>The foundation of this guide was based on <a href="https://github.com/ZKjellberg">Zachary Kjellberg</a>'s <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">Dark Souls 3 Cheat Sheet</a> source code and formatting</p>
+              <p>Most of the guide itself is based on <a href="https://twitter.com/OzirisLoL">Oziris</a> <a href=https://pastebin.com/KAm2GfGN>Ironman Guide v4</a> that was rewritten and formatted by <a href=https://twitter.com/NightleafTV>NightleafTV</a> at <a href=http://nightleaf.org>nightleaf.org</a>. </p>
+          
+              <h3>I have feedback, how can I contribute?</h3>
+              <p>You can either message me on <a href="https://discordapp.com/users/114200877627211781">Discord</a>, or visit the <a href="https://github.com/dot2JC/GIMP">GitHub repository</a> and <a href="https://github.com/dot2JC/GIMP/issues">report Issues</a> or create a fork and submit a Pull Request.</p>
+          
+              <h3>Is this a guide?</h3>
+              <p>More or less, yes. It's more of an organized list with easily markable entries to keep track of progress.</p>
+          
+              <h3>Do I need to follow the playthrough in this exact order?</h3>
+              <p>Absolutely not, deviate however you would like.</p>
+          
+              <h3>Can I use this for multiple characters?</h3>
+              <p>Yup, use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.</p>
+          
+              <h3>How does the checklist status get saved?</h3>
+              <p>The checklist is saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.</p>
+          </div>
+
+          <div class="tab-pane" id="tabOptions">
+            <h2>Options</h2>
+            <!-- Theme Selection -->
+            <div class="row">
+              <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Theme selection:</h4></div>
+              <div class="col col-xs-12 col-sm-8 col-md-6"><select class="form-control" id="themes"><!-- Gets filled by jQuery. --></select></div>
+            </div>
+              <!-- Profile Selection -->
+        <div class="row">
+          <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Profile management:</h4></div>
+          <div class="col col-xs-12 col-sm-8 col-md-6">
+            <form class="form-inline input-group pull-right">
+              <select class="form-control" id="profiles"></select>
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" id="profileAdd">Add</button>
+                <button class="btn btn-default" type="button" id="profileEdit">Edit</button>
+                <!-- <button class="btn btn-default" type="button" id="profileNG+">NG+</button> -->
+              </span>
+            </form>
+          </div>
+        </div>
+        <!-- Import/Export -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-6"><h4>Data import/export:</h4></div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <form class="form-inline">
+              <span class="btn-group pull-left">
+                <button class="btn btn-default" type="button" id="profileImport">Import file</button>
+                <button class="btn btn-default" type="button" id="profileExport">Export file</button>
+              </span>
+              <span class="btn-group pull-right">
+                <button class="btn btn-default" type="button" id="profileImportText">Import textbox</button>
+                <button class="btn btn-default" type="button" id="profileExportText">Export clipboard</button>
+              </span>
+            </form>
+          </div>
+          <div class="col col-xs-12">
+            <textarea id="profileText" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div id="profileModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3 id="profileModalTitle" class="modal-title">Profile</h3>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal">
+                <div class="control-group">
+                  <label class="control-label" for="profileModalName">Name</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" id="profileModalName" placeholder="Enter profile name">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#" id="profileModalClose" class="btn btn-default" data-dismiss="modal">Close</a>
+              <a href="#" id="profileModalAdd" class="btn btn-primary" data-dismiss="modal">Add</a>
+              <a href="#" id="profileModalUpdate" class="btn btn-primary">Update</a>
+              <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="hiddenfile">
+    <input name="upload" type="file" id="fileInput" />
+  </div>
+
+  <a class="btn btn-default btn-sm fadingbutton back-to-top" onclick="backToTopFunction()" id="backToTop">Back to Top&thinsp;<span class="glyphicon glyphicon-arrow-up"></span></a>
+                
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/andris9/jStorage/v0.4.12/jstorage.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.buttflare.com/ajax/libs/jets/0.8.0/jets.min.js"></script> -->
+  <script src="js/jquery.highlight.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-66576837-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+      backToTopButton = document.getElementById("backToTop");
+  hideCompletedButton = document.getElementById("hideCompleted");
+
+  window.onscroll = function () {
+    scrollFunctionToTop()
+  };
+
+  function scrollFunctionToTop() {
+    if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+      $("#backToTop").fadeIn("slow");
+      backToTopButton.style.display = "block";
+    } else {
+      $("#backToTop").fadeOut("slow");
+    }
+  }
+
+  $(window).scroll(function () {
+    scrollFunctionHideCompleted()
+  });
+
+  function scrollFunctionHideCompleted() {
+    if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+      $("#hideCompleted").fadeIn("slow");
+      hideCompletedButton.style.display = "block";
+    } else {
+      $("#hideCompleted").fadeOut("slow");
+    }
+  }
+
+  function backToTopFunction() {
+    $("html, body").animate({
+        scrollTop: 0,
+      },
+      1100,
+      "swing"
+    );
+    return false;
+  }
+  </script>
+</body>
+</html>
