@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<meta charset="utf-8">
 <head>
+    <meta charset="utf-8">
+    <title>G.I.M.P. Progress Gallery</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
     <link href="css/progimages.css" rel="stylesheet">
 </head>
-
+<div id="navbar">
+    <a href="#home">Home</a>
+    <a href="#john">John</a>
+    <a href="#josh">Josh</a>
+    <a href="#kendall">Kendall</a>
+    <a href="#kevin">Kevin</a>
+    <a href="#Tony">Tony</a>
+</div>
     <body>
-        <h1>John's Progress Photos</h1>
+        <img src="img/pog.png" title="Pog" class="center" height="69px" width="auto"><h1>-ress Gallery</h1>
+        <h1 id="john">John's Progress Photos</h1>
         <!-- https://drive.google.com/drive/folders/1Z4TnZCd2ru5SQtMSJBRXRNYgQdYA4tOO?usp=sharing -->
         <p><iframe src="https://drive.google.com/embeddedfolderview?id=1Z4TnZCd2ru5SQtMSJBRXRNYgQdYA4tOO#grid" style="width:875px; height:850px; border:0;"></iframe></p>
 
-        <h1>Josh's Progress Photos</h1>
+        <h1 id="josh">Josh's Progress Photos</h1>
         <!-- https://drive.google.com/drive/folders/1bt8Jxe8ZocWXPkSzHpDwjWbg-XY-Lhey?usp=sharing -->
         <p><iframe src="https://drive.google.com/embeddedfolderview?id=1bt8Jxe8ZocWXPkSzHpDwjWbg-XY-Lhey#grid" style="width:875px; height:850px; border:0;"></iframe></p>
 
-        <h1>Kendall's Progress Photos</h1>
+        <h1 id="kendall">Kendall's Progress Photos</h1>
         <!-- https://drive.google.com/drive/folders/1zA8_fq5vp826wNNYt2lSXiGufwpaKfpf?usp=sharing -->
         <p><iframe src="https://drive.google.com/embeddedfolderview?id=1zA8_fq5vp826wNNYt2lSXiGufwpaKfpf#grid" style="width:875px; height:850px; border:0;"></iframe></p>
 
-        <h1>Kevin's Progress Photos</h1>
+        <h1 id="kevin">Kevin's Progress Photos</h1>
         <!-- https://drive.google.com/drive/folders/1spjMrEnQtevcRB4umVX629zvQ72yeZnb?usp=sharing -->
         <p><iframe src="https://drive.google.com/embeddedfolderview?id=1spjMrEnQtevcRB4umVX629zvQ72yeZnb#grid" style="width:875px; height:850px; border:0;"></iframe></p>
 
-        <h1>Tony's Progress Photos</h1>
+        <h1 id="tony">Tony's Progress Photos</h1>
         <!-- https://drive.google.com/drive/folders/1XCRByBg4Sr3I-TfKniiYZKUV3zsooyeN?usp=sharing -->
         <p><iframe src="https://drive.google.com/embeddedfolderview?id=1XCRByBg4Sr3I-TfKniiYZKUV3zsooyeN#grid" style="width:875px; height:850px; border:0;"></iframe></p>
     </body>
+<script>
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}  
+</script>
 </html>
