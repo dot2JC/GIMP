@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script type="text/javascript">
+        var apiUrl = 'https://api.wiseoldman.net/players/username/an%20ant';
+        fetch(apiUrl).then(response => {
+          return response.json();
+        }).then(data => {
+          // Work with JSON data here
+          document.getElementById("response").innerHTML = this.responseText;
+          console.log(data);
+        }).catch(err => {
+          // Do something for an error here
+          <p>Error fetching!</p>
+        });
+    </script>
+    <a href="index.html">back</a>
+</body>
+</html>
