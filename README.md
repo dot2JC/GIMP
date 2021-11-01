@@ -13,7 +13,8 @@ John | OG 2JC
 Kendall | OG 924Kendie
 Tony | OGPipelineXL
 Josh | OG Joshua
-Kevin | Limpwarrior5
+Kevin | Limpwarrior5 (Removed on 11/8)
+Austin | TBD (Adding on 11/8)
 
 ## TODO
 - [x] Fix checkboxes
