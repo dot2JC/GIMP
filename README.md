@@ -13,8 +13,11 @@ John | OG 2JC
 Kendall | OG 924Kendie
 Tony | OGPipelineXL
 Josh | OG Joshua
+Austin | IAmGumby
+
+# Retired Participants
 Kevin | Limpwarrior5 (Removed on 11/8)
-Austin | TBD (Adding on 11/8)
+
 
 ## TODO
 - [x] Fix checkboxes
