@@ -54,16 +54,18 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
 .banner {
-    position: absolute;
+    /* position: absolute;
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: center; */
 }
 .backdrop{
+    /*
     position: absolute;
     z-index: 1;
     margin-left: auto;
@@ -80,4 +82,5 @@ p {
     left: 0;
     right: 0;
     text-align: center;
+    */
 }
